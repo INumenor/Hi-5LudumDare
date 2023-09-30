@@ -17,7 +17,7 @@ public class RandomItemDrop : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             AllTile[i] = transform.GetChild(i).gameObject;
-            Debug.Log(AllTile[i].name);
+            //Debug.Log(AllTile[i].name);
         }
     }
      void Update()
