@@ -27,4 +27,8 @@ public class CharacterController : MonoBehaviour
         myRigidBody2D.MovePosition(myRigidBody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print(collision.name +" "+this.name);
+    }
 }
