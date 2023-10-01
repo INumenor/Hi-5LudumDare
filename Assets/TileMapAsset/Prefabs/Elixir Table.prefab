@@ -75,8 +75,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1717208644, guid: 63e417a008c8e824b978b2d052ddb1ff, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1856015768, guid: d9cd1df88897a6c499e8b275eb12330b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,9 +168,9 @@ GameObject:
   - component: {fileID: 5467945532711628610}
   - component: {fileID: 7557481570412792711}
   - component: {fileID: 9141462171464056897}
-  - component: {fileID: -6756770049994435641}
+  - component: {fileID: 1341412930605626019}
   m_Layer: 6
-  m_Name: Merging Table
+  m_Name: Elixir Table
   m_TagString: Station
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
---- !u!114 &-6756770049994435641
+--- !u!114 &1341412930605626019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,18 +299,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7596228966992866066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e4eeb66761b5247ad921cad18f914b, type: 3}
+  m_Script: {fileID: 11500000, guid: b8e1e1117bd982348846d53ccc21745a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrind: 0
   Slot1: {fileID: 5403581133724273255}
   Slot2: {fileID: 9175980268068216807}
-  Spear: {fileID: 6749886091073689943, guid: ccfffc7ecd89de84aba82a647b2a4636, type: 3}
-  PoisonedSpear: {fileID: 6749886091073689943, guid: ec4fdb21f035bcd4ebd0bb1dde9fc9cc, type: 3}
-  ElectricedSpear: {fileID: 6749886091073689943, guid: 835ac836db3d2dc4da509dac572272e9, type: 3}
-  PoisonedKnife: {fileID: 7348694707694221767, guid: 94c894cb6d9e6e740a7a821c635a4a6b, type: 3}
-  ElectricedKnife: {fileID: 7348694707694221767, guid: 04527e4b2bb7e114da26bbf1902b203a, type: 3}
-  maxMerging: 3
+  BlueBottle: {fileID: 7348694707694221767, guid: d40675f84432691458e3c48ebf8be257, type: 3}
+  GreenBottle: {fileID: 7348694707694221767, guid: 8aee7db1211c8fd4bbbe597d714f3bf6, type: 3}
+  maxMerging: 5
 --- !u!1 &9175980268068216807
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,8 +382,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1717208644, guid: 63e417a008c8e824b978b2d052ddb1ff, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1856015768, guid: d9cd1df88897a6c499e8b275eb12330b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

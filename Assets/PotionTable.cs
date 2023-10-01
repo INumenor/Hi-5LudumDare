@@ -9,7 +9,7 @@ public class PotionTable : MonoBehaviour
 {
     public bool poting = false;
     private GameObject itemtarget;
-    public void Update()
+    public void FixedUpdate()
     {
         if (transform.childCount > 0)
         {

@@ -30,9 +30,10 @@ public class MergingTable : MonoBehaviour
         set
         {
             merging = value;
+            Debug.Log("Yapılıyor...");
             if (value >= maxMerging)
             {
-                isMergable = false;
+                //isMergable = false;
                 Debug.Log("İşlemi tamamla");
                 GameObject shineyObject = Instantiate(result, new Vector2(0, 0), Quaternion.identity);
                 shineyObject.transform.parent = Slot1.transform;
@@ -41,8 +42,9 @@ public class MergingTable : MonoBehaviour
                 Destroy(Slot1.transform.GetChild(0).gameObject);
                 Destroy(Slot2.transform.GetChild(0).gameObject);
                 
-                Slot1.GetComponent<TileSlot>()._isFull = false;
+                //Slot1.GetComponent<TileSlot>()._isFull = false;
                 Slot2.GetComponent<TileSlot>()._isFull = false;
+                merging = 0;
 
 
             }
@@ -62,11 +64,40 @@ public class MergingTable : MonoBehaviour
                     _merging += 1* Time.deltaTime;
                     result = Spear;
                 }
+                else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 &&
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 ||
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 &&
+                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 7)
+                {
+                    _merging += 1* Time.deltaTime;
+                    result = PoisonedSpear;
+                }
+                else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 9 ||
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
+                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 9)
+                {
+                    _merging += 1* Time.deltaTime;
+                    result = ElectricedKnife;
+                }
+                else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 &&
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 &&
+                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 14)
+                {
+                    _merging += 1* Time.deltaTime;
+                    result = PoisonedKnife;
+                }
+                else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
+                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 14)
+                {
+                    _merging += 1* Time.deltaTime;
+                    result = ElectricedKnife;
+                }
             }
-            else
-            {
-                merging = 0;//WIP
-            }
+                
         }
     }
 }
