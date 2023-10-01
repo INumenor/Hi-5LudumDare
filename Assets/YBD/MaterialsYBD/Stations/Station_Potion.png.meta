@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9cd1df88897a6c499e8b275eb12330b
+guid: cceb77430972383478dfa148a261d833
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character-Carry_up_0
+      name: Station_Potion_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b590922ba989c94db21cac4ceee0764
-      internalID: 1371248010
+      spriteID: de4462fab86441640ac81bea37eae50e
+      internalID: -2057648639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a7a775ec5f201d4691b801052e8c3b1
-      internalID: 312290348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_2
+      name: Station_Potion_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,41 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b98703822e046f47b22e61145573e2f
-      internalID: -1856015768
+      spriteID: 067f597dbdead0d468e017747d37bce4
+      internalID: 1935774706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b36f35218759c544ae714b37cac64b8
-      internalID: -1157158475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_4
+      name: Station_Potion_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9842bb97c9960544e806c445e71ba5d9
-      internalID: -1675198239
+      spriteID: 592dd6d35c7dfa041ae659208c7798f5
+      internalID: -702774423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_5
+      name: Station_Potion_3
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,8 +187,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dbbb32c9619834c89f07d5a79431ad
-      internalID: -1038903867
+      spriteID: 223747126f8dd2a4382b5a2b12890c20
+      internalID: 1133904242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Potion_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b1116bf1060bd478635fcac6e48ca8
+      internalID: 1315677362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Potion_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46700013fb54baf4faa942de79726d5e
+      internalID: -1011671273
       vertices: []
       indices: 
       edges: []
@@ -272,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main character-Carry_up_0: 1371248010
-      Main character-Carry_up_1: 312290348
-      Main character-Carry_up_2: -1856015768
-      Main character-Carry_up_3: -1157158475
-      Main character-Carry_up_4: -1675198239
-      Main character-Carry_up_5: -1038903867
+      Station_Potion_0: -2057648639
+      Station_Potion_1: 1935774706
+      Station_Potion_2: -702774423
+      Station_Potion_3: 1133904242
+      Station_Potion_4: 1315677362
+      Station_Potion_5: -1011671273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

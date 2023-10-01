@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9cd1df88897a6c499e8b275eb12330b
+guid: f494b95b3bb1f954fb982bd52d8005ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,127 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character-Carry_up_0
+      name: Station_Elixir_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b590922ba989c94db21cac4ceee0764
-      internalID: 1371248010
+      spriteID: a5472326320f9ce4c920a0374815b1c5
+      internalID: 2054620777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a7a775ec5f201d4691b801052e8c3b1
-      internalID: 312290348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_2
+      name: Station_Elixir_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b98703822e046f47b22e61145573e2f
-      internalID: -1856015768
+      spriteID: 6594a2bd778f3354da750e109e4e0eff
+      internalID: 1754081329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b36f35218759c544ae714b37cac64b8
-      internalID: -1157158475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_4
+      name: Station_Elixir_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9842bb97c9960544e806c445e71ba5d9
-      internalID: -1675198239
+      spriteID: d89238aeed83171428e0eba9e0fdf385
+      internalID: -2032891397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_5
+      name: Station_Elixir_3
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dbbb32c9619834c89f07d5a79431ad
-      internalID: -1038903867
+      spriteID: 6bc58ffbe191837449df9e301a1d4ec2
+      internalID: -237853691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Elixir_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181750dc14c7c1b42b4028ec701041f6
+      internalID: -799133295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Elixir_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39199a9ba464c3f4a8278eed475441a4
+      internalID: -563169917
       vertices: []
       indices: 
       edges: []
@@ -272,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main character-Carry_up_0: 1371248010
-      Main character-Carry_up_1: 312290348
-      Main character-Carry_up_2: -1856015768
-      Main character-Carry_up_3: -1157158475
-      Main character-Carry_up_4: -1675198239
-      Main character-Carry_up_5: -1038903867
+      Station_Elixir_0: 2054620777
+      Station_Elixir_1: 1754081329
+      Station_Elixir_2: -2032891397
+      Station_Elixir_3: -237853691
+      Station_Elixir_4: -799133295
+      Station_Elixir_5: -563169917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

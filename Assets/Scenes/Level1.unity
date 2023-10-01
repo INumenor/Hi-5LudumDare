@@ -3735,17 +3735,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35f802990f33e349bbeded9c213b8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedTaskPrefab: {fileID: 6682717893060842110, guid: ec306ec0f526df242a58fce63641a3fc, type: 3}
-  tasklist:
-  - {fileID: 11400000, guid: 31dbb3b7e768c6042934b392fd24de2b, type: 2}
-  - {fileID: 11400000, guid: 94917b6d726c21b48b40c8e39dc83266, type: 2}
   "task\u0131tem":
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  tasklist:
+  - {fileID: 11400000, guid: 31dbb3b7e768c6042934b392fd24de2b, type: 2}
+  - {fileID: 11400000, guid: 94917b6d726c21b48b40c8e39dc83266, type: 2}
+  createtask: []
+  droppedTaskPrefab: {fileID: 6682717893060842110, guid: ec306ec0f526df242a58fce63641a3fc, type: 3}
   task: {fileID: 3912457241370924430, guid: 9110d80f344f4ad4799b123f986557a9, type: 3}
   clone: {fileID: 0}
-  createtask: []
   taskcanvas: {fileID: 264796210}
   taskvector: {x: 0, y: 0, z: 0}
   Slot1: 0000000032000000

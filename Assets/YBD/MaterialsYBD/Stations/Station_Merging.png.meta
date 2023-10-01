@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9cd1df88897a6c499e8b275eb12330b
+guid: b4c9a0ebd8c387c4994f058c413d19b0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,127 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character-Carry_up_0
+      name: Station_Merging_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b590922ba989c94db21cac4ceee0764
-      internalID: 1371248010
+      spriteID: 1d17a8d0c07c1b241a5ff5cd3d0d1228
+      internalID: -766742753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a7a775ec5f201d4691b801052e8c3b1
-      internalID: 312290348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_2
+      name: Station_Merging_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b98703822e046f47b22e61145573e2f
-      internalID: -1856015768
+      spriteID: 2444dd7aecb06bc479629ff512bf0b16
+      internalID: 1509974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b36f35218759c544ae714b37cac64b8
-      internalID: -1157158475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_4
+      name: Station_Merging_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9842bb97c9960544e806c445e71ba5d9
-      internalID: -1675198239
+      spriteID: b60907d58de0cea4fa500ffc40d13427
+      internalID: 1156391824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_5
+      name: Station_Merging_3
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dbbb32c9619834c89f07d5a79431ad
-      internalID: -1038903867
+      spriteID: 5e1ba0390fe7f044bb8eda43d8e6da12
+      internalID: 909137379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Merging_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdfb501d771e4e4ab57bc53fcfd02b1
+      internalID: -1625695797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Merging_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e75a99b886643046910e61472e06021
+      internalID: 1348096405
       vertices: []
       indices: 
       edges: []
@@ -272,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main character-Carry_up_0: 1371248010
-      Main character-Carry_up_1: 312290348
-      Main character-Carry_up_2: -1856015768
-      Main character-Carry_up_3: -1157158475
-      Main character-Carry_up_4: -1675198239
-      Main character-Carry_up_5: -1038903867
+      Station_Merging_0: -766742753
+      Station_Merging_1: 1509974
+      Station_Merging_2: 1156391824
+      Station_Merging_3: 909137379
+      Station_Merging_4: -1625695797
+      Station_Merging_5: 1348096405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
