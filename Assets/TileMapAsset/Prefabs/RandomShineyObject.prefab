@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1943525608997572322}
   - component: {fileID: 4573607822469273229}
   m_Layer: 7
-  m_Name: RandomTestItem
+  m_Name: RandomShineyObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 15f0bccb124e9c24c9b8b631189d39d6, type: 3}
-  m_Color: {r: 0.24528301, g: 0.16521893, b: 0.16521893, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -145,6 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxGrindValue: 5
   maxPotionValue: 5
-  isGrindable: 1
-  isPotionable: 0
-  grindedVersion: {fileID: 4014262400606322669, guid: 46930d4f923847f4c81de36e6b13df94, type: 3}
+  grindValue: 0
+  potionValue: 0
+  grindedVersion: {fileID: 0}
