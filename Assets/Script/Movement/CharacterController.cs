@@ -26,7 +26,14 @@ public class CharacterController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
-
+        if (Input.GetKeyDown(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        {
+            target.GetComponent<GrindingMachine>().isGrind = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        {
+            target.GetComponent<GrindingMachine>().isGrind = false;
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("BBBBBB");
@@ -56,6 +63,7 @@ public class CharacterController : MonoBehaviour
                     Item.transform.parent = target.transform;
                     IsHolding = false;
                     target.GetComponent<TileSlot>()._isFull = true;
+                    
                     //
                 }
 
@@ -75,7 +83,7 @@ public class CharacterController : MonoBehaviour
     {
         //_other = other;
 
-        if (other.CompareTag("ground") && pickuping == false)
+        if (other.CompareTag("ground") && pickuping == false || other.CompareTag("Station") && pickuping == false)
         {
             target = other.gameObject;
         }
