@@ -310,7 +310,7 @@ MonoBehaviour:
   ElectricedSpear: {fileID: 6749886091073689943, guid: 835ac836db3d2dc4da509dac572272e9, type: 3}
   PoisonedKnife: {fileID: 7348694707694221767, guid: 94c894cb6d9e6e740a7a821c635a4a6b, type: 3}
   ElectricedKnife: {fileID: 7348694707694221767, guid: 04527e4b2bb7e114da26bbf1902b203a, type: 3}
-  maxMerging: 5
+  maxMerging: 3
 --- !u!1 &9175980268068216807
 GameObject:
   m_ObjectHideFlags: 0
