@@ -29,33 +29,39 @@ public class CharacterController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("BBBBBB");
+            //Debug.Log("BBBBBB");
 
             if (target != null )
             {
                 pickuping = true;
-                Debug.Log("Target var");
-                Debug.Log("IsHolding " + IsHolding.ToString());
-                Debug.Log("Target Fullnes " + (target.GetComponent<TileSlot>()._isFull == true).ToString());
-                Debug.Log(target.name);
+                //Debug.Log("Target var");
+                //Debug.Log("IsHolding " + IsHolding.ToString());
+                //Debug.Log("Target Fullnes " + (target.GetComponent<TileSlot>()._isFull == true).ToString());
+                //Debug.Log(target.name);
 
                 if (IsHolding == false && target.GetComponent<TileSlot>()._isFull == true)
                 {
-
+                   
+                    Debug.Log(target.GetComponent<Collider2D>().enabled);
                     GameObject Item = target.transform.GetChild(0).gameObject;
                     Item.transform.position = HoldSpot.transform.position;
                     Item.transform.parent = HoldSpot.transform;
                     IsHolding = true;
+                    target.GetComponent<Collider2D>().enabled = false;
                     target.GetComponent<TileSlot>()._isFull = false;
+                    Debug.Log(target.GetComponent<Collider2D>().enabled);
                     //
                 }
                 else if (IsHolding == true && target.GetComponent<TileSlot>()._isFull == false)
                 {
+                   
                     GameObject Item = HoldSpot.transform.GetChild(0).gameObject;
                     Item.transform.position = target.transform.position;
                     Item.transform.parent = target.transform;
                     IsHolding = false;
+                    target.GetComponent<Collider2D>().enabled = true;
                     target.GetComponent<TileSlot>()._isFull = true;
+                    
                     //
                 }
 
