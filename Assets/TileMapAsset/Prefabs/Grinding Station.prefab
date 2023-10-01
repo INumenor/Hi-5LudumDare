@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 5467945532711628610}
   - component: {fileID: 7557481570412792711}
   - component: {fileID: 7218776426167539500}
+  - component: {fileID: 8414801875846381841}
   - component: {fileID: 9141462171464056897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grinding Station
-  m_TagString: ground
+  m_TagString: Station
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +97,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 999dba123cc4f184390e61c6898ebe8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+--- !u!114 &8414801875846381841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7596228966992866066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9de30500301ef4788162f066fd0ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &9141462171464056897

@@ -328,6 +328,12 @@ MonoBehaviour:
   Task: {fileID: 7564601247934612135, guid: 256c4b0955a98a243a2c200788ab5d33, type: 3}
   Canvas: {fileID: 50195568}
   Tasks: []
+  SlotValue: 0
+  items: []
+  taskitems: []
+  Slot1: 
+  Slot2: 
+  Slot3: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +2834,10 @@ PrefabInstance:
     - target: {fileID: 7596228966992866066, guid: 6d06b4a6058f2764891509140ed2bdaf, type: 3}
       propertyPath: m_Name
       value: Grinding Station
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596228966992866066, guid: 6d06b4a6058f2764891509140ed2bdaf, type: 3}
+      propertyPath: m_TagString
+      value: Station
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,6 +6,7 @@ public class TileSlot : MonoBehaviour
 {
     [SerializeField] bool isFull = false;
 
+
     public bool _isFull
     {
         get
