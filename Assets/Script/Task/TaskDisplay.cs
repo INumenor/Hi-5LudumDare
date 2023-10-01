@@ -10,15 +10,69 @@ public class TaskDisplay : MonoBehaviour
     public GameObject Task;
     public GameObject Canvas;
     public GameObject[] Tasks;
-    // Start is called before the first frame update
+    public int SlotValue;
+    public Items[] items;
+    public Items[] taskitems;
+    
+    [SerializeField]
+    public int[] Slot1;
+
+    [SerializeField]
+    public int[] Slot2;
+
+    [SerializeField]
+    public int[] Slot3;
+
     void Start()
     {
-        Task.GetComponent<CreatingTask>().obj1.texture = Items[0];
-        Task.GetComponent<CreatingTask>().obj2.texture = Items[1];
-        Task.GetComponent<CreatingTask>().obj3.texture = Items[2];
+        int iRandomValue = Random.Range(0, 100);
+        
+        if(iRandomValue >= Slot1[0] &&  iRandomValue <= Slot1[1])
+        {
+            SlotValue = 1;
+        }
+        else if (iRandomValue > Slot2[0] && iRandomValue <= Slot2[1])
+        {
+            SlotValue = 2;
+        }
+        else if (iRandomValue > Slot3[0] && iRandomValue <= Slot3[1])
+        {
+            SlotValue = 3;
+        }
+        taskitems = new Items[SlotValue];
+        for (int y = 0; y < SlotValue; y++)
+        {
+            int iRandomItemValue = Random.Range(0, 100);
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i].minvalue < iRandomItemValue && items[i].maxvalue > iRandomItemValue)
+                {
+                    taskitems[y] = items[i];
+                }
+            }
+        }
+        
+        //Task.GetComponent<CreatingTask>().obj2.texture = Items[1];
+        //Task.GetComponent<CreatingTask>().obj3.texture = Items[2];
         GameObject CopyTask = Instantiate(Task,new Vector2(0,0),Quaternion.identity);
         CopyTask.transform.parent = Canvas.transform;
         CopyTask.transform.localPosition = new Vector2(-180,100);
+        for(int z = 0; z < SlotValue; z++)
+        {
+            Task.GetComponent<CreatingTask>().obj1.texture = items[0].Image;
+            Task.GetComponent<CreatingTask>().objg1.active = true;
+            if (z >= 1)
+            {
+                Task.GetComponent<CreatingTask>().obj2.texture = items[1].Image;
+                Task.GetComponent<CreatingTask>().objg2.active = true;
+            }
+            if (z >= 2)
+            {
+                Task.GetComponent<CreatingTask>().obj3.texture = items[2].Image;
+                Task.GetComponent<CreatingTask>().objg3.active = true;
+            }
+        }
 
     }
 

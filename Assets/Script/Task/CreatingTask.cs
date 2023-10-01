@@ -10,6 +10,9 @@ public class CreatingTask : MonoBehaviour
     public RawImage obj1;
     public RawImage obj2;
     public RawImage obj3;
+    public GameObject objg1;
+    public GameObject objg2;
+    public GameObject objg3;
     public float time;
     // Start is called before the first frame update
     void Start()
