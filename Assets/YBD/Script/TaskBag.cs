@@ -30,6 +30,10 @@ public class TaskBag : MonoBehaviour
     }
     TaskItems getDropItem()
     {
+        if(createtask.Count <= 7)
+        {
+
+
         int iRandomValue = Random.Range(0, 100);
 
         if (iRandomValue >= Slot1[0] && iRandomValue <= Slot1[1])
@@ -44,55 +48,61 @@ public class TaskBag : MonoBehaviour
         {
             SlotValue = 3;
         }
-        
 
 
-       
+
+
         List<TaskItems> possibleItems = new List<TaskItems>();
-        for (int i=0;i<SlotValue;i++) {
+        for (int i = 0; i < SlotValue; i++) {
             int randomNumber = Random.Range(1, 101);
             foreach (TaskItems item in tasklist)
             {
                 if (randomNumber >= item.mindropChance && randomNumber <= item.maxdropChance)
                 {
                     possibleItems.Add(item);
-                   
+
 
                 }
             }
         }
 
-        GameObject clonejr = Instantiate(clone, new Vector2(0, 0), clone.transform.rotation);
+        GameObject clonejr = Instantiate(clone, new Vector2(0, 0), Quaternion.identity);
         Transform parentTransform = clonejr.transform;
         GameObject firstChild = parentTransform.GetChild(0).gameObject;
         GameObject secondChild = parentTransform.GetChild(1).gameObject;
         GameObject thirdChild = parentTransform.GetChild(2).gameObject;
         clonejr.transform.parent = taskcanvas.transform;
-        clonejr.transform.localPosition = new Vector3(taskvector.x,taskvector.y+25,taskvector.z);
+        clonejr.transform.localPosition = new Vector3(taskvector.x, taskvector.y + 25, taskvector.z);
+        clonejr.transform.localRotation = new Quaternion(0, 180, 0, 0);
         clonejr.transform.localScale = new Vector3(22.4111576f, 5.32264996f, 22.4111576f);
-        
-        for (int y = 0; y <= possibleItems.Count;y++)
+
+        for (int y = 0; y <= possibleItems.Count; y++)
         {
-          
-            if (y> 0)
+
+            if (y > 0)
             {
                 firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
-                firstChild.active = true ;
+                firstChild.GetComponent<Image>().color = new Color32(84, 84, 84, 160);
+                firstChild.active = true;
             }
-            if (y> 1)
+            if (y > 1)
             {
                 secondChild.GetComponent<Image>().sprite = possibleItems[1].TaskSprite;
+                secondChild.GetComponent<Image>().color = new Color32(84, 84, 84, 160);
                 secondChild.active = true;
             }
-            if (y> 2)
+            if (y > 2)
             {
                 thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
+                thirdChild.GetComponent<Image>().color = new Color32(84, 84, 84, 160);
                 thirdChild.active = true;
             }
 
         }
+        clonejr.name = (createtask.Count + 1).ToString();
         createtask.Add(clonejr);
-        taskvector.y=taskvector.y + 25;
+        taskvector.y = taskvector.y + 25;
+    }
         return null;
     }
     public void Button()
