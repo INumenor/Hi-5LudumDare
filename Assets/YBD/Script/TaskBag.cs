@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TaskBag : MonoBehaviour
 {
-    [SerializeField] GameObject[] taskýtem;
+    [SerializeField] GameObject[] taskitem;
 
     
     public List<TaskItems> tasklist = new List<TaskItems>();
-    [SerializeField] List<GameObject> createtask = new List<GameObject>();
+    public List<GameObject> createtask = new List<GameObject>();
     public List<Tasks> tasksInfo = new List<Tasks>();
     int number=1;
     public GameObject droppedTaskPrefab;
@@ -72,7 +72,7 @@ public class TaskBag : MonoBehaviour
             clonejr.transform.parent = taskcanvas.transform;
             clonejr.name = number.ToString();
             clonejr.transform.localPosition = new Vector3(taskvector.x, taskvector.y - 25, taskvector.z);
-            clonejr.transform.localScale = new Vector3(22.4111576f, 5.32264996f, 22.4111576f);
+            clonejr.transform.localScale = new Vector3(1f, 1f, 1f);
             clonejr.transform.localRotation = new Quaternion(0, 180, 0, 0);
 
             for (int y = 0; y <= possibleItems.Count; y++)

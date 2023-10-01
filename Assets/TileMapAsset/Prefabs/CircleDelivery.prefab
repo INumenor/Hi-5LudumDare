@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7557481570412792711}
   - component: {fileID: 7218776426167539500}
   - component: {fileID: 9141462171464056897}
+  - component: {fileID: 8920724546680793948}
   m_Layer: 6
   m_Name: CircleDelivery
   m_TagString: Delivery
@@ -145,6 +146,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &8920724546680793948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7596228966992866066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f5b4bb504230b469b90942f0073bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8704063791347766203
 GameObject:
   m_ObjectHideFlags: 0
