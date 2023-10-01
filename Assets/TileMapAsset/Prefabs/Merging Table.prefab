@@ -185,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 7596228966992866066}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.34, y: 3.04, z: 0.07170162}
+  m_LocalPosition: {x: -4.53, y: -2.46, z: 0.07170162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -305,6 +305,12 @@ MonoBehaviour:
   isGrind: 0
   Slot1: {fileID: 5403581133724273255}
   Slot2: {fileID: 9175980268068216807}
+  Spear: {fileID: 6749886091073689943, guid: ccfffc7ecd89de84aba82a647b2a4636, type: 3}
+  PoisonedSpear: {fileID: 6749886091073689943, guid: ec4fdb21f035bcd4ebd0bb1dde9fc9cc, type: 3}
+  ElectricedSpear: {fileID: 6749886091073689943, guid: 835ac836db3d2dc4da509dac572272e9, type: 3}
+  PoisonedKnife: {fileID: 7348694707694221767, guid: 94c894cb6d9e6e740a7a821c635a4a6b, type: 3}
+  ElectricedKnife: {fileID: 7348694707694221767, guid: 04527e4b2bb7e114da26bbf1902b203a, type: 3}
+  maxMerging: 5
 --- !u!1 &9175980268068216807
 GameObject:
   m_ObjectHideFlags: 0
