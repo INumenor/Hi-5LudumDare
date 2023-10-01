@@ -50,12 +50,20 @@ public class CharacterController : MonoBehaviour
             {
                 target.GetComponent<GrindingMachine>().isGrind = true;
             }
+            else if (target.GetComponent<MergingSlot>() != null)
+            {
+                target.transform.parent.GetComponent<MergingTable>().isGrind = true;
+            }
         }
         else if (Input.GetKeyUp(KeyCode.X))
         {
             if (target.GetComponent<GrindingMachine>() != null)
             {
                 target.GetComponent<GrindingMachine>().isGrind = false;
+            }
+            else if (target.GetComponent<MergingSlot>() != null)
+            {
+                target.transform.parent.GetComponent<MergingTable>().isGrind = true;
             }
         }
         
