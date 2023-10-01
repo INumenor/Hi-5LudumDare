@@ -4,13 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TaskBag : MonoBehaviour
 {
-    public GameObject droppedTaskPrefab;
-    public List<TaskItems> tasklist = new List<TaskItems>();
     [SerializeField] GameObject[] taskýtem;
+
+    
+    public List<TaskItems> tasklist = new List<TaskItems>();
+    [SerializeField] List<GameObject> createtask = new List<GameObject>();
+    public List<Tasks> tasksInfo = new List<Tasks>();
+
+    public GameObject droppedTaskPrefab;
     public GameObject task;
     public GameObject clone;
-    public List<GameObject> createtask = new List<GameObject>();
     public GameObject taskcanvas;
+
     public Vector3 taskvector;
     int SlotValue;
 
@@ -45,9 +50,6 @@ public class TaskBag : MonoBehaviour
             SlotValue = 3;
         }
         
-
-
-       
         List<TaskItems> possibleItems = new List<TaskItems>();
         for (int i=0;i<SlotValue;i++) {
             int randomNumber = Random.Range(1, 101);
@@ -87,12 +89,16 @@ public class TaskBag : MonoBehaviour
             {
                 thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
             }
-           
-            
-           
+          
         }
         taskvector.y=taskvector.y + 25;
+        createtask.Add(clonejr);
+
         return null;
+    }
+    public void TaskInfo()
+    {
+
     }
     public void Button()
     {
