@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fec5d1f6b0c68534f91131209eb4b094
+guid: e8091cfb6e26e2b4fb285dc560dc73ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character-Carry_down_0
+      name: TestTiles_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e722877bcadeeee48a7ae9c6fee396cf
-      internalID: -2067464691
+      spriteID: e2108eae1fc3fdc4f98b03221ce2d352
+      internalID: 231885781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_down_1
+      name: TestTiles_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d594e04248fd014a90a971de6356a7d
-      internalID: 1381840294
+      spriteID: 322fa0ee23bdf0d48aceb0d7569c4247
+      internalID: -1535319584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_down_2
+      name: TestTiles_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,71 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a9b931d3410b93439724311b9be3322
-      internalID: -480117467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_down_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54681cf1bc5e9ad4fbd6f7346731aa60
-      internalID: -1302011089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_down_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31e62e8ddb0255d4b9f6c18ab95c887a
-      internalID: -1523423714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_down_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: def8406680d834f4c8fd0d51a546ebb7
-      internalID: -1581320105
+      spriteID: 0e237b57d049f4d4ead6db4f09702cbf
+      internalID: -536177045
       vertices: []
       indices: 
       edges: []
@@ -272,12 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main character-Carry_down_0: -2067464691
-      Main character-Carry_down_1: 1381840294
-      Main character-Carry_down_2: -480117467
-      Main character-Carry_down_3: -1302011089
-      Main character-Carry_down_4: -1523423714
-      Main character-Carry_down_5: -1581320105
+      TestTiles_0: 231885781
+      TestTiles_1: -1535319584
+      TestTiles_2: -536177045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
