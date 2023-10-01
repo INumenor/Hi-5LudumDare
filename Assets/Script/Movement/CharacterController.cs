@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -43,14 +44,21 @@ public class CharacterController : MonoBehaviour
         }
         
         
-        if (Input.GetKeyDown(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            target.GetComponent<GrindingMachine>().isGrind = true;
+            if (target.GetComponent<GrindingMachine>() != null)
+            {
+                target.GetComponent<GrindingMachine>().isGrind = true;
+            }
         }
-        else if (Input.GetKeyUp(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        else if (Input.GetKeyUp(KeyCode.X))
         {
-            target.GetComponent<GrindingMachine>().isGrind = false;
+            if (target.GetComponent<GrindingMachine>() != null)
+            {
+                target.GetComponent<GrindingMachine>().isGrind = false;
+            }
         }
+        
         
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -72,7 +80,7 @@ public class CharacterController : MonoBehaviour
                     Item.transform.position = HoldSpot.transform.position;
                     Item.transform.parent = HoldSpot.transform;
                     IsHolding = true;
-                    target.GetComponent<Collider2D>().enabled = false;
+                    Item.GetComponent<Collider2D>().enabled = false;
                     target.GetComponent<TileSlot>()._isFull = false;
                     Debug.Log(target.GetComponent<Collider2D>().enabled);
                     //
@@ -84,7 +92,7 @@ public class CharacterController : MonoBehaviour
                     Item.transform.position = target.transform.position;
                     Item.transform.parent = target.transform;
                     IsHolding = false;
-                    target.GetComponent<Collider2D>().enabled = true;
+                    Item.GetComponent<Collider2D>().enabled = true;
                     target.GetComponent<TileSlot>()._isFull = true;
                     
                     //

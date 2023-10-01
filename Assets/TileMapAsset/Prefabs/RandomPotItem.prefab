@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1943525608997572322}
   - component: {fileID: 4573607822469273229}
   m_Layer: 7
-  m_Name: RandomTestItem
+  m_Name: RandomPotItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,11 +76,11 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 15f0bccb124e9c24c9b8b631189d39d6, type: 3}
-  m_Color: {r: 0.24528301, g: 0.16521893, b: 0.16521893, a: 1}
+  m_Color: {r: 1, g: 0.531899, b: 0.032075405, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 1.024, y: 1.024}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,8 +122,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
-    newSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 1.024, y: 1.024}
+    newSize: {x: 1.024, y: 1.024}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -145,7 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxGrindValue: 5
   maxPotionValue: 5
-  isGrindable: 1
-  isPotionable: 1
+  isGrindable: 0
+  isPotionable: 0
   grindedVersion: {fileID: 4014262400606322669, guid: 46930d4f923847f4c81de36e6b13df94, type: 3}
-  potionVersion: {fileID: 4014262400606322669, guid: 11b057a028c237940b0debadce7a73ae, type: 3}
