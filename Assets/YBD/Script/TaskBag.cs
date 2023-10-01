@@ -76,21 +76,22 @@ public class TaskBag : MonoBehaviour
           
             if (y> 0)
             {
-                
                 firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
+                firstChild.active = true ;
             }
             if (y> 1)
             {
                 secondChild.GetComponent<Image>().sprite = possibleItems[1].TaskSprite;
+                secondChild.active = true;
             }
             if (y> 2)
             {
                 thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
+                thirdChild.active = true;
             }
-           
-            
-           
+
         }
+        createtask.Add(clonejr);
         taskvector.y=taskvector.y + 25;
         return null;
     }
