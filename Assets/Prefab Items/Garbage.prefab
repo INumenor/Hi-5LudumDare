@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8103679091345161184}
   - component: {fileID: 1020743259985446396}
   - component: {fileID: 8795811661794232515}
+  - component: {fileID: -5369959357923120869}
   m_Layer: 0
   m_Name: Garbage
   m_TagString: Untagged
@@ -130,3 +131,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-5369959357923120869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705767111224210563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f037cb2cb6699854da7a7aeee42deb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxGrindValue: 5
+  ID: 0
+  maxPotionValue: 5
+  isGrindable: 0
+  isPotionable: 0
+  grindedVersion: {fileID: 0}
+  potionVersion: {fileID: 0}
