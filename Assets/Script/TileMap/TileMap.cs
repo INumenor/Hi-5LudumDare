@@ -10,6 +10,9 @@ public class TileMap : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] GameObject Circle;
     [SerializeField] GameObject Area;
+    [SerializeField] float xbuffer;
+    [SerializeField] float ybuffer;
+
     void Awake()
     {
         Tilemap tilemap = GetComponent<Tilemap>();
@@ -24,7 +27,7 @@ public class TileMap : MonoBehaviour
                 if (tile != null)
                 {
                     //Debug.Log("x:" + x + " y:" + y + " tile:" + tile.name);
-                    GameObject CopyCircle = Instantiate(Circle, new Vector2(x-(bounds.size.x/2)+0.5f, y-(bounds.size.y/2) +0.5f), Quaternion.identity);
+                    GameObject CopyCircle = Instantiate(Circle, new Vector2(x-(bounds.size.x)+ xbuffer, y-(bounds.size.y)+ ybuffer), Quaternion.identity);
                     CopyCircle.name = "CopyCircle" + x + y;
                     CopyCircle.transform.parent = Area.transform;
                 }

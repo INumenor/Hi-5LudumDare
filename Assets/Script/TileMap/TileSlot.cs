@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TileSlot : MonoBehaviour
 {
-    private bool isFull = false;
+    [SerializeField] bool isFull = false;
 
     public bool _isFull
     {
