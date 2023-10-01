@@ -30,9 +30,10 @@ public class MergingTable : MonoBehaviour
         set
         {
             merging = value;
+            Debug.Log("Yapılıyor...");
             if (value >= maxMerging)
             {
-                isMergable = false;
+                //isMergable = false;
                 Debug.Log("İşlemi tamamla");
                 GameObject shineyObject = Instantiate(result, new Vector2(0, 0), Quaternion.identity);
                 shineyObject.transform.parent = Slot1.transform;
@@ -41,7 +42,7 @@ public class MergingTable : MonoBehaviour
                 Destroy(Slot1.transform.GetChild(0).gameObject);
                 Destroy(Slot2.transform.GetChild(0).gameObject);
                 
-                Slot1.GetComponent<TileSlot>()._isFull = false;
+                //Slot1.GetComponent<TileSlot>()._isFull = false;
                 Slot2.GetComponent<TileSlot>()._isFull = false;
                 merging = 0;
 
