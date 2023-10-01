@@ -11,6 +11,7 @@ public class TaskDisplay : MonoBehaviour
     public GameObject Canvas;
     public GameObject[] Tasks;
     public int SlotValue;
+    public Sprite game;
     public Items[] items;
     public Items[] taskitems;
     
@@ -23,7 +24,7 @@ public class TaskDisplay : MonoBehaviour
     [SerializeField]
     public int[] Slot3;
 
-    void Start()
+    void Awake()
     {
         int iRandomValue = Random.Range(0, 100);
         
@@ -58,21 +59,23 @@ public class TaskDisplay : MonoBehaviour
         GameObject CopyTask = Instantiate(Task,new Vector2(0,0),Quaternion.identity);
         CopyTask.transform.parent = Canvas.transform;
         CopyTask.transform.localPosition = new Vector2(-180,100);
-        for(int z = 0; z < SlotValue; z++)
-        {
-            Task.GetComponent<CreatingTask>().obj1.texture = items[0].Image;
-            Task.GetComponent<CreatingTask>().objg1.active = true;
-            if (z >= 1)
-            {
-                Task.GetComponent<CreatingTask>().obj2.texture = items[1].Image;
-                Task.GetComponent<CreatingTask>().objg2.active = true;
-            }
-            if (z >= 2)
-            {
-                Task.GetComponent<CreatingTask>().obj3.texture = items[2].Image;
-                Task.GetComponent<CreatingTask>().objg3.active = true;
-            }
-        }
+
+        //for(int z = 0; z < SlotValue; z++)
+        //{
+              Debug.Log(Task.transform.GetChild(1).GetComponent<RawImage>().texture);
+              Task.transform.GetChild(2).GetComponent<RawImage>().texture = game.texture;
+        //    Task.GetComponent<CreatingTask>().obj1.material.mainTexture = items[0].Image;
+        //    if (z >= 1)
+        //    {
+        //        Task.GetComponent<CreatingTask>().obj2.texture = items[1].Image;
+        //        Task.GetComponent<CreatingTask>().objg2.active = true;
+        //    }
+        //    if (z >= 2)
+        //    {
+        //        Task.GetComponent<CreatingTask>().obj3.texture = items[2].Image;
+        //        Task.GetComponent<CreatingTask>().objg3.active = true;
+        //    }
+        //}
 
     }
 

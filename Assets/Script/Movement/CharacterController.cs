@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     public GameObject HoldSpot;
     private GameObject ItemHolding;
     public bool IsHolding=false;
-
+    [SerializeField] Animator chanimator;
     private Collider2D _other;
     private GameObject target;
     private bool pickuping = false;
@@ -26,6 +26,22 @@ public class CharacterController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
+        //Debug.Log(movement.x + ":x" + " " + movement.y + ":y");
+        if (IsHolding == false)
+        {
+            chanimator.SetBool("isHolding", false);
+            chanimator.SetFloat("Horizontal", movement.x);
+            chanimator.SetFloat("Vertical", movement.y);
+            chanimator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        else if(IsHolding == true)
+        {
+            chanimator.SetBool("isHolding",true);
+            chanimator.SetFloat("Horizontal", movement.x);
+            chanimator.SetFloat("Vertical", movement.y);
+            chanimator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        
 
         if (Input.GetKeyDown(KeyCode.E))
         {
