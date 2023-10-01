@@ -35,6 +35,7 @@ public class RandomItemDrop : MonoBehaviour
         }
         int iLengt = EmptyTile.Count;
         int iRandomSlot = Random.Range(0, iLengt);
+        Debug.Log(RandomItem.Length);
         int iRandomItem = Random.Range(0, RandomItem.Length);
         if(EmptyTile[iRandomSlot].GetComponent<TileSlot>()._isFull == false)
         {

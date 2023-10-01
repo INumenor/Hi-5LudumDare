@@ -564,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194711697}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.5004106, y: 1.569, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2240,7 +2240,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EmptyTile: []
   RandomItem:
-  - {fileID: 4014262400606322669, guid: 46930d4f923847f4c81de36e6b13df94, type: 3}
+  - {fileID: 7348694707694221767, guid: 463006852b3980a479bf3aa641d240a8, type: 3}
+  - {fileID: 6749886091073689943, guid: cfdea95cf87bfa740aa50355cfbd4fde, type: 3}
+  - {fileID: 5319180295112187650, guid: e662cf26c845e35488514f4259eaa05b, type: 3}
+  - {fileID: 2705767111224210563, guid: 8c67e4cd4d4827b46bc69ec28ce4e4d6, type: 3}
+  - {fileID: 5549744898133676839, guid: f713257f03a982142a4faadc3bfbb5c4, type: 3}
 --- !u!1 &1561239169
 GameObject:
   m_ObjectHideFlags: 0
