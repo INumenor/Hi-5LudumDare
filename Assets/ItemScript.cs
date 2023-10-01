@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
    public float maxGrindValue = 5;
+   public int ID;
    public float maxPotionValue = 5;
    public bool isGrindable = false;
    public bool isPotionable = false;

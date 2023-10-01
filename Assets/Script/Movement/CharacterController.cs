@@ -44,13 +44,19 @@ public class CharacterController : MonoBehaviour
         }
         
         
-        if (Input.GetKeyDown(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            target.GetComponent<GrindingMachine>().isGrind = true;
+            if (target.GetComponent<GrindingMachine>() != null)
+            {
+                target.GetComponent<GrindingMachine>().isGrind = true;
+            }
         }
-        else if (Input.GetKeyUp(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        else if (Input.GetKeyUp(KeyCode.X))
         {
-            target.GetComponent<GrindingMachine>().isGrind = false;
+            if (target.GetComponent<GrindingMachine>() != null)
+            {
+                target.GetComponent<GrindingMachine>().isGrind = false;
+            }
         }
         
         
