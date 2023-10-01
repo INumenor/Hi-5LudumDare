@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3002369216894347456}
   - component: {fileID: 8628643052224348551}
   m_Layer: 0
-  m_Name: "M\u0131zrak"
+  m_Name: "10_Elektrikli M\u0131zrak"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2139456614, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
+  m_Sprite: {fileID: -584506788, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxGrindValue: 5
-  ID: 8
+  ID: 10
   maxPotionValue: 5
   isGrindable: 0
   isPotionable: 0

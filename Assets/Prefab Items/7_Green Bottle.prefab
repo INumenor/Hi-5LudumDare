@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5038346778190386954}
   - component: {fileID: 3652484988638992228}
   m_Layer: 0
-  m_Name: "Elektrikli B\u0131\xE7ak"
+  m_Name: 7_Green Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -535146470, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
+  m_Sprite: {fileID: -380168577, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxGrindValue: 5
-  ID: 12
+  ID: 7
   maxPotionValue: 5
   isGrindable: 0
   isPotionable: 0
