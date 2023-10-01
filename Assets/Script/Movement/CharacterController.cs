@@ -42,7 +42,16 @@ public class CharacterController : MonoBehaviour
             chanimator.SetFloat("Speed", movement.sqrMagnitude);
         }
         
-
+        
+        if (Input.GetKeyDown(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        {
+            target.GetComponent<GrindingMachine>().isGrind = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.X) && target.GetComponent<GrindingMachine>() != null)
+        {
+            target.GetComponent<GrindingMachine>().isGrind = false;
+        }
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("BBBBBB");
@@ -91,7 +100,7 @@ public class CharacterController : MonoBehaviour
     {
         //_other = other;
 
-        if (other.CompareTag("ground") && pickuping == false)
+        if (other.CompareTag("ground") && pickuping == false || other.CompareTag("Station") && pickuping == false)
         {
             target = other.gameObject;
         }
