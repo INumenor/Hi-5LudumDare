@@ -7,6 +7,11 @@ public class TaskBag : MonoBehaviour
     public GameObject droppedTaskPrefab;
     public List<TaskItems> tasklist = new List<TaskItems>();
     [SerializeField] GameObject[] taskýtem;
+    public GameObject task;
+    public GameObject clone;
+    public List<GameObject> createtask = new List<GameObject>();
+    public GameObject taskcanvas;
+    public Vector3 taskvector;
     int SlotValue;
 
     
@@ -18,6 +23,11 @@ public class TaskBag : MonoBehaviour
 
     [SerializeField]
     public int[] Slot3;
+    private void Start()
+    {
+        clone = task;
+        taskvector= new Vector3(-113.57f, -121.580002f-25, 0.471659988f);
+    }
     TaskItems getDropItem()
     {
         int iRandomValue = Random.Range(0, 100);
@@ -35,27 +45,53 @@ public class TaskBag : MonoBehaviour
             SlotValue = 3;
         }
         
-        int randomNumber = Random.Range(1, 101);
+
+
+       
         List<TaskItems> possibleItems = new List<TaskItems>();
         for (int i=0;i<SlotValue;i++) {
+            int randomNumber = Random.Range(1, 101);
             foreach (TaskItems item in tasklist)
             {
                 if (randomNumber >= item.mindropChance && randomNumber <= item.maxdropChance)
                 {
                     possibleItems.Add(item);
-                    Debug.Log(item.name);
+                   
 
                 }
             }
         }
+
+        GameObject clonejr = Instantiate(clone, new Vector2(0, 0), clone.transform.rotation);
+        Transform parentTransform = clonejr.transform;
+        GameObject firstChild = parentTransform.GetChild(0).gameObject;
+        GameObject secondChild = parentTransform.GetChild(1).gameObject;
+        GameObject thirdChild = parentTransform.GetChild(2).gameObject;
+        clonejr.transform.parent = taskcanvas.transform;
+        clonejr.transform.localPosition = new Vector3(taskvector.x,taskvector.y+25,taskvector.z);
+        clonejr.transform.localScale = new Vector3(22.4111576f, 5.32264996f, 22.4111576f);
         
-        for (int y = 0; y < possibleItems.Count;y++)
+        for (int y = 0; y <= possibleItems.Count;y++)
         {
-            TaskItems droppedItem = possibleItems[y];
-            taskýtem[y].GetComponent<Image>().sprite = droppedItem.TaskSprite;
+          
+            if (y> 0)
+            {
+                
+                firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
+            }
+            if (y> 1)
+            {
+                secondChild.GetComponent<Image>().sprite = possibleItems[1].TaskSprite;
+            }
+            if (y> 2)
+            {
+                thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
+            }
+           
             
            
         }
+        taskvector.y=taskvector.y + 25;
         return null;
     }
     public void Button()
