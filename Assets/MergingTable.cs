@@ -73,12 +73,12 @@ public class MergingTable : MonoBehaviour
                     result = PoisonedSpear;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
-                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 9 ||
+                         Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 ||
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
-                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 9)
+                         Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 8)
                 {
                     _merging += 1* Time.deltaTime;
-                    result = ElectricedKnife;
+                    result = ElectricedSpear;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 &&
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||

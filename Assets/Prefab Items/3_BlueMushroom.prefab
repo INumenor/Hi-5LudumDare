@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6756298523500343620}
   - component: {fileID: -9145813027776514500}
   m_Layer: 0
-  m_Name: BlueMushroom
+  m_Name: 3_BlueMushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
