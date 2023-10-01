@@ -52,6 +52,7 @@ public class CharacterController : MonoBehaviour
             target.GetComponent<GrindingMachine>().isGrind = false;
         }
         
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("BBBBBB");
