@@ -122,7 +122,7 @@ public class CharacterController : MonoBehaviour
     {
         //_other = other;
 
-        if (other.CompareTag("ground") && pickuping == false || other.CompareTag("Station") && pickuping == false)
+        if (other.CompareTag("ground") && pickuping == false || other.CompareTag("Station") && pickuping == false || other.CompareTag("Delivery") && pickuping == false)
         {
             target = other.gameObject;
         }
