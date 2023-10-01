@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
 public class TaskBag : MonoBehaviour
 {
     [SerializeField] GameObject[] taskitem;
@@ -19,7 +22,12 @@ public class TaskBag : MonoBehaviour
     public Vector3 taskvector;
     int SlotValue;
 
-    
+    public Dictionary<int, GameObject> Dict = new Dictionary<int, GameObject>()
+    {
+        {0,null},
+        {1,null},
+        {2,null},
+    };
     [SerializeField]
     public int[] Slot1;
 
@@ -97,6 +105,7 @@ public class TaskBag : MonoBehaviour
             }
             taskvector.y = taskvector.y - 25;
             createtask.Add(clonejr);
+            Dict.Add(number,clonejr);
             number++;
         }
         return null;
