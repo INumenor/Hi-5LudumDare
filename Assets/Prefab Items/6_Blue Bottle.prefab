@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5038346778190386954}
   - component: {fileID: 3652484988638992228}
   m_Layer: 0
-  m_Name: "K\u0131rm\u0131z\u0131 \u015Fi\u015Fe"
+  m_Name: 6_Blue Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -409262498, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
-  m_Color: {r: 0.990566, g: 0.2653969, b: 0.2653969, a: 1}
+  m_Sprite: {fileID: -812023754, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxGrindValue: 5
-  ID: 13
+  ID: 6
   maxPotionValue: 5
   isGrindable: 0
   isPotionable: 0

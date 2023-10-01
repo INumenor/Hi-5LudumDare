@@ -28,19 +28,29 @@ public class CharacterController : MonoBehaviour
         movement.y = Input.GetAxis("Vertical");
 
         //Debug.Log(movement.x + ":x" + " " + movement.y + ":y");
-        if (IsHolding == false)
+        if (movement.sqrMagnitude <= 0.1)
         {
-            chanimator.SetBool("isHolding", false);
+            
+            //chanimator.SetFloat("Horizontal", movement.x);
+            //chanimator.SetFloat("Vertical", movement.y);
+            chanimator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        else
+        {
             chanimator.SetFloat("Horizontal", movement.x);
             chanimator.SetFloat("Vertical", movement.y);
             chanimator.SetFloat("Speed", movement.sqrMagnitude);
         }
+        if (IsHolding == false)
+        {
+            chanimator.SetBool("isHolding", false);
+        }
         else if(IsHolding == true)
         {
             chanimator.SetBool("isHolding",true);
-            chanimator.SetFloat("Horizontal", movement.x);
-            chanimator.SetFloat("Vertical", movement.y);
-            chanimator.SetFloat("Speed", movement.sqrMagnitude);
+            //chanimator.SetFloat("Horizontal", movement.x);
+            //chanimator.SetFloat("Vertical", movement.y);
+            //chanimator.SetFloat("Speed", movement.sqrMagnitude);
         }
         
         
@@ -118,32 +128,20 @@ public class CharacterController : MonoBehaviour
         myRigidBody2D.MovePosition(myRigidBody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    public void checking(Collider2D other)
     {
-        //_other = other;
-
         if (other.CompareTag("ground") && pickuping == false || other.CompareTag("Station") && pickuping == false || other.CompareTag("Delivery") && pickuping == false)
         {
             target = other.gameObject;
         }
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        //_other = other;
+
+        checking(other);
 
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("ground"))
-    //    {
-    //        target = other.gameObject;
-    //    }
-    //}
-
-    //private void OnTriggerExit2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("ground"))
-    //    {
-    //        Debug.Log(other);
-    //        target = null;
-    //    }
-    //}
 }
 
