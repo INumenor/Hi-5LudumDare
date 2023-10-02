@@ -10,8 +10,8 @@ public class RandomItemDrop : MonoBehaviour
     [SerializeField] List<GameObject> EmptyTile;
     [SerializeField] GameObject[] RandomItem;
     [SerializeField] private AudioSource _audioItemFall;
-    private float maxtimevalue = 10f;
-    private float timevalue = 5f;
+    private float maxtimevalue = 4f;
+    private float timevalue = 1f;
 
     private void Start()
     {
