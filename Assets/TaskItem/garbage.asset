@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2fc51bf5e00b34c91e2ed91fdfb75c, type: 3}
   m_Name: garbage
   m_EditorClassIdentifier: 
-  TaskSprite: {fileID: 0}
+  TaskSprite: {fileID: 1286868055, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   Taskname: garbage
   mindropChance: 0
   ID: 0
