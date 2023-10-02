@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2fc51bf5e00b34c91e2ed91fdfb75c, type: 3}
   m_Name: GreenBottle
   m_EditorClassIdentifier: 
-  TaskSprite: {fileID: 0}
+  TaskSprite: {fileID: -380168577, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   Taskname: BlueBottle
   mindropChance: 0
   ID: 7
-  Difficulty: 0
+  Difficulty: 30
   maxdropChance: 0
