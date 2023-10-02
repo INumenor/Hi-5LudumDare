@@ -76,6 +76,10 @@ public class TaskBag : MonoBehaviour
             GameObject firstChild = parentTransform.GetChild(1).gameObject;
             GameObject secondChild = parentTransform.GetChild(2).gameObject;
             GameObject thirdChild = parentTransform.GetChild(3).gameObject;
+            //firstChild.GetComponent<idtask>()._isActive = true;
+            //secondChild.GetComponent<idtask>()._isActive = true;
+            //thirdChild.GetComponent<idtask>()._isActive = true;
+
             clonejr.transform.parent = taskcanvas.transform;
             clonejr.name = iPop[0].ToString();
             clonejr.transform.localPosition = new Vector3(taskvector.x, taskvector.y - 25, taskvector.z);
@@ -89,18 +93,21 @@ public class TaskBag : MonoBehaviour
                 {
                     firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
                     firstChild.GetComponent<idtask>().ID = possibleItems[0].ID;
+                    firstChild.GetComponent<idtask>()._isActive = false;
                     firstChild.active = true;
                 }
                 if (y > 1)
                 {
                     secondChild.GetComponent<Image>().sprite = possibleItems[1].TaskSprite;
                     secondChild.GetComponent<idtask>().ID = possibleItems[1].ID;
+                    secondChild.GetComponent<idtask>()._isActive = false;
                     secondChild.active = true;
                 }
                 if (y > 2)
                 {
                     thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
                     thirdChild.GetComponent<idtask>().ID = possibleItems[2].ID;
+                    thirdChild.GetComponent<idtask>()._isActive = false;
                     thirdChild.active = true;
                 }
 
@@ -108,7 +115,7 @@ public class TaskBag : MonoBehaviour
             taskvector.y = taskvector.y - 25;
             createtask.Add(clonejr);
             Dict.Add(iPop[0],clonejr);
-            clonejr.GetComponent<TheTask>().ID = 1;
+            clonejr.GetComponent<TheTask>().ID = iPop[0];
             iPop.RemoveAt(0);
             //number++;
         }
