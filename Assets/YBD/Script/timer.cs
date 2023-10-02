@@ -13,5 +13,10 @@ public class timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(remaningtime / 60);
         int seconds = Mathf.FloorToInt(remaningtime % 60);
         timertext.text = string.Format("{0:00}:{1:00}",minutes,seconds);
+
+        if (remaningtime <= 0)
+        {
+            Debug.Log("Kazandık");
+        }
     }
 }

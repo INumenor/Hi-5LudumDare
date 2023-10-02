@@ -97,6 +97,7 @@ public class TaskBag : MonoBehaviour
                 {
                     firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
                     firstChild.GetComponent<idtask>().ID = possibleItems[0].ID;
+                    firstChild.GetComponent<idtask>().Difficulty = possibleItems[0].Difficulty;
                     firstChild.GetComponent<idtask>()._isActive = false;
                     firstChild.active = true;
                 }

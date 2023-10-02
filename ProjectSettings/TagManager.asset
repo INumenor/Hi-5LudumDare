@@ -8,6 +8,7 @@ TagManager:
   - ground
   - Station
   - Delivery
+  - TaskBag
   layers:
   - Default
   - TransparentFX

@@ -16,4 +16,5 @@ MonoBehaviour:
   Taskname: rustyKnife
   mindropChance: 20
   ID: 1
+  Difficulty: 5
   maxdropChance: 100

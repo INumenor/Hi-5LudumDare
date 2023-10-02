@@ -9,6 +9,23 @@ public class CharacterController : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] private GameObject InteractionSpot;
     public float Vertical, Horizontal;
+    private int Health = 3;
+
+    public int _Health
+    {
+        get
+        {
+            return Health;
+        }
+        set
+        {
+            Health = value;
+            if (Health <= 0)
+            {
+                Debug.Log("GAME OVER");
+            }
+        }
+    }
 
     Vector2 movement;
 
