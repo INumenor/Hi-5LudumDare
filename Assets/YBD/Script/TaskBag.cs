@@ -88,16 +88,19 @@ public class TaskBag : MonoBehaviour
                 if (y > 0)
                 {
                     firstChild.GetComponent<Image>().sprite = possibleItems[0].TaskSprite;
+                    firstChild.GetComponent<idtask>().ID = possibleItems[0].ID;
                     firstChild.active = true;
                 }
                 if (y > 1)
                 {
                     secondChild.GetComponent<Image>().sprite = possibleItems[1].TaskSprite;
+                    secondChild.GetComponent<idtask>().ID = possibleItems[1].ID;
                     secondChild.active = true;
                 }
                 if (y > 2)
                 {
                     thirdChild.GetComponent<Image>().sprite = possibleItems[2].TaskSprite;
+                    thirdChild.GetComponent<idtask>().ID = possibleItems[2].ID;
                     thirdChild.active = true;
                 }
 

@@ -30,8 +30,27 @@ public class DeliverSlot : MonoBehaviour
                     GameObject firstChild = parentTransform.transform.GetChild(1).gameObject;
                     GameObject secondChild = parentTransform.transform.GetChild(2).gameObject;
                     GameObject thirdchild = parentTransform.transform.GetChild(3).gameObject;
-                    
-                    //içimdeki itemin idsi ile taskteki herhangi bir itemin idsi uyuşuyorsa içimdeki itemi yok et ve taskteki itemi tamamlanmış hale getir. 
+
+                    int itemID = transform.GetChild(1).GetComponent<ItemScript>().ID;
+                    // İçerideki erişilen id güncellenecek
+                    if (firstChild.GetComponent<idtask>().ID == itemID && firstChild.GetComponent<idtask>()._isActive == false && transform.childCount > 1)
+                    {
+                        firstChild.GetComponent<idtask>()._isActive = true;
+                        transform.GetComponent<TileSlot>()._isFull = false;
+                        Destroy(transform.GetChild(1).gameObject);
+                    }else if(secondChild.GetComponent<idtask>().ID == itemID && secondChild.GetComponent<idtask>()._isActive == false && transform.childCount > 1)
+                    {
+                        secondChild.GetComponent<idtask>()._isActive = true;
+                        transform.GetComponent<TileSlot>()._isFull = false;
+                        Destroy(transform.GetChild(1).gameObject);
+                    }else if(thirdchild.GetComponent<idtask>().ID == itemID && thirdchild.GetComponent<idtask>()._isActive == false && transform.childCount > 1)
+                    {
+                        thirdchild.GetComponent<idtask>()._isActive = true;
+                        transform.GetComponent<TileSlot>()._isFull = false;
+                        Destroy(transform.GetChild(1).gameObject);
+                    }
+
+                    //içimdeki itemin idsi ile ___ taskteki herhangi bir itemin idsi uyuşuyorsa içimdeki itemi yok et ve taskteki itemi tamamlanmış hale getir. 
 
                     
                     
