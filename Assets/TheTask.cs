@@ -44,7 +44,8 @@ public class TheTask : MonoBehaviour
         
         if (firstChild_idtask._isActive == true && secondChild_idtask._isActive == true && thirdchild_idtask._isActive == true)
         {
-            //Elin alma animasyonu burada devreye girecek, görev silinecek, görev_id pooluna bu görevin idsi geri eklenecek
+            //Elin alma animasyonu burada devreye girecek.
+            
             taskBag.iPop.Add(ID); 
             Debug.Log(ID);
             taskBag.createtask.Remove(this.gameObject);
