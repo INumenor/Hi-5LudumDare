@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa2fc51bf5e00b34c91e2ed91fdfb75c, type: 3}
-  m_Name: greenMushroom
+  m_Name: RedBottle
   m_EditorClassIdentifier: 
-  TaskSprite: {fileID: 21300000, guid: 4dab81f39797a2d42beb1467c48a29ca, type: 3}
-  Taskname: greenMushroom
+  TaskSprite: {fileID: 0}
+  Taskname: RedBottle
   mindropChance: 0
-  maxdropChance: 20
+  ID: 13
+  Difficulty: 0
+  maxdropChance: 0
