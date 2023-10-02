@@ -4400,6 +4400,7 @@ MonoBehaviour:
   - {fileID: 5319180295112187650, guid: e662cf26c845e35488514f4259eaa05b, type: 3}
   - {fileID: 2705767111224210563, guid: 8c67e4cd4d4827b46bc69ec28ce4e4d6, type: 3}
   - {fileID: 5549744898133676839, guid: f713257f03a982142a4faadc3bfbb5c4, type: 3}
+  - {fileID: 3417132882209658479, guid: 94c93d68ce774084896a236f4acfddab, type: 3}
 --- !u!1 &1444952119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,6 +4443,7 @@ MonoBehaviour:
   clone: {fileID: 0}
   taskcanvas: {fileID: 1053755988}
   taskvector: {x: 0, y: 0, z: 0}
+  iPop: 010000000200000003000000040000000500000006000000070000000800000009000000
   Slot1: 0000000032000000
   Slot2: 4600000064000000
   Slot3: 3200000046000000

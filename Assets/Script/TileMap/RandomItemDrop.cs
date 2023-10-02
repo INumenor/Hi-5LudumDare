@@ -41,6 +41,7 @@ public class RandomItemDrop : MonoBehaviour
         {
             GameObject CopyRandomItem = Instantiate(RandomItem[iRandomItem], new Vector2(0, 0), Quaternion.identity);
             CopyRandomItem.transform.parent = EmptyTile[iRandomSlot].transform;
+            CopyRandomItem.name = RandomItem[iRandomItem].name;
             CopyRandomItem.transform.localPosition = new Vector2(0, 0);
             EmptyTile[iRandomSlot].GetComponent<TileSlot>()._isFull = true;
         }

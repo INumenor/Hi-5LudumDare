@@ -22,11 +22,10 @@ public class TaskBag : MonoBehaviour
     public Vector3 taskvector;
     int SlotValue;
 
+    public List<int> iPop = new List<int>{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
     public Dictionary<int, GameObject> Dict = new Dictionary<int, GameObject>()
     {
-        {0,null},
-        {1,null},
-        {2,null},
     };
     [SerializeField]
     public int[] Slot1;
@@ -43,7 +42,7 @@ public class TaskBag : MonoBehaviour
     }
     TaskItems getDropItem()
     {
-        if (createtask.Count <= 6)
+        if (createtask.Count <= 8)
         {
             int iRandomValue = Random.Range(0, 100);
 
@@ -74,11 +73,11 @@ public class TaskBag : MonoBehaviour
 
             GameObject clonejr = Instantiate(clone, new Vector2(0, 0), clone.transform.rotation);
             Transform parentTransform = clonejr.transform;
-            GameObject firstChild = parentTransform.GetChild(0).gameObject;
-            GameObject secondChild = parentTransform.GetChild(1).gameObject;
-            GameObject thirdChild = parentTransform.GetChild(2).gameObject;
+            GameObject firstChild = parentTransform.GetChild(1).gameObject;
+            GameObject secondChild = parentTransform.GetChild(2).gameObject;
+            GameObject thirdChild = parentTransform.GetChild(3).gameObject;
             clonejr.transform.parent = taskcanvas.transform;
-            clonejr.name = number.ToString();
+            clonejr.name = iPop[0].ToString();
             clonejr.transform.localPosition = new Vector3(taskvector.x, taskvector.y - 25, taskvector.z);
             clonejr.transform.localScale = new Vector3(1f, 1f, 1f);
             clonejr.transform.localRotation = new Quaternion(0, 180, 0, 0);
@@ -105,8 +104,9 @@ public class TaskBag : MonoBehaviour
             }
             taskvector.y = taskvector.y - 25;
             createtask.Add(clonejr);
-            Dict.Add(number,clonejr);
-            number++;
+            Dict.Add(iPop[0],clonejr);
+            iPop.RemoveAt(0);
+            //number++;
         }
         return null;
     }
