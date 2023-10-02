@@ -10,7 +10,7 @@ using UnityEditor;
 public class GrindingMachine : MonoBehaviour
 {
     public bool isGrind = false;
-    private GameObject itemtarget;
+    public GameObject itemtarget;
     [SerializeField]private Slider slider;
     public void Start()
     {
@@ -24,17 +24,26 @@ public class GrindingMachine : MonoBehaviour
         {
             if (itemtarget == null && transform.childCount > 0)
             {
-                itemtarget = transform.GetChild(1).gameObject;
+                itemtarget = transform.GetChild(0).gameObject;
             }
             else if(!itemtarget.IsDestroyed())
             {
-                Debug.Log(itemtarget.name);
                 if (itemtarget.GetComponent<ItemScript>().isGrindable)
                 {
                     itemtarget.GetComponent<ItemScript>()._grindValue += 1* Time.deltaTime;
                     slider.value = itemtarget.GetComponent<ItemScript>()._grindValue;
                 }
+
             }
+        }
+        else
+        {
+            itemtarget = null;
+        }
+        if(slider.value == slider.maxValue)
+        {
+            slider.value = slider.minValue;
+            
         }
     }
 }

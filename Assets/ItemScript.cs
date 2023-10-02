@@ -34,6 +34,7 @@ public class ItemScript : MonoBehaviour
             shineyObject.transform.localPosition = Vector2.zero;
             //Destroy(this);
             Destroy(gameObject);
+
          }
       }
    }
@@ -54,9 +55,9 @@ public class ItemScript : MonoBehaviour
             GameObject shineyObject = Instantiate(grindedVersion, new Vector2(0, 0), Quaternion.identity);
             shineyObject.transform.parent = this.transform.parent;
             shineyObject.transform.localPosition = Vector2.zero;
-            //shineyObject.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - 1);
             //Destroy(this);
             Destroy(gameObject);
+            
          }
       }
    }
