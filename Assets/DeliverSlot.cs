@@ -6,15 +6,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DeliverSlot : MonoBehaviour
 {
-    [SerializeField] private int ID;
-    [SerializeField] private TaskBag taskBag;
-
-    private void Start()
-    {
-        
-
-        
-    }
+    [SerializeField] public int ID;
+    [SerializeField] public TaskBag taskBag;
 
     public void Update()
     {
@@ -64,15 +57,13 @@ public class DeliverSlot : MonoBehaviour
                         Destroy(transform.GetChild(1).gameObject);
                         transform.GetComponent<TileSlot>()._isFull = false;
                     }
-
                     if(thirdchild.name == "Correct" && secondChild.name == "Correct" && firstChild.name == "Correct")
                     {
-                        taskBag.iPop.Add(task.Key);
-                        taskBag.createtask.RemoveAt(task.Key);
-                        
+                        Debug.Log(task.Key);
+                        Debug.Log(taskBag.createtask.Count);
+                        taskBag.TaskInfo(task.Key-1);
+                        taskBag.IPopAdd(task.Key);
                     }
-
-
                     //Debug.Log(transform.GetChild(1).name);
                     //Debug.Log(firstChild.GetComponent<Image>().sprite.name);
                 }

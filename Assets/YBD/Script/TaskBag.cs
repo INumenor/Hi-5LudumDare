@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class TaskBag : MonoBehaviour
 {
-    [SerializeField] GameObject[] taskitem;
+    
 
     
     public List<TaskItems> tasklist = new List<TaskItems>();
@@ -103,8 +103,11 @@ public class TaskBag : MonoBehaviour
 
             }
             taskvector.y = taskvector.y - 25;
+            Debug.Log("rinaaa");
             createtask.Add(clonejr);
+            Debug.Log("rinaaa");
             Dict.Add(iPop[0],clonejr);
+            Debug.Log("REE"+ iPop[0]);
             iPop.RemoveAt(0);
             //number++;
         }
@@ -114,6 +117,11 @@ public class TaskBag : MonoBehaviour
     {
         Destroy(createtask[iSayi]);
         createtask.RemoveAt(iSayi); 
+    }
+    public void IPopAdd(int iSayi)
+    {
+        Dict.Remove(iSayi);
+        iPop.Add(iSayi);
     }
     public void Button()
     {
