@@ -14,6 +14,7 @@ public class TheTask : MonoBehaviour
     private float maxtimevalue = 10f;
     private float timevalue = 5f;
     private bool allSet = false;
+    [SerializeField] private Slider Pbar;
     public bool _deathSign
     {
         get
@@ -37,6 +38,7 @@ public class TheTask : MonoBehaviour
 
         maxtimevalue = maxtimevalue + firstChild_idtask.Difficulty + secondChild_idtask.Difficulty + thirdchild_idtask.Difficulty;
         timevalue = maxtimevalue;
+        Pbar.maxValue = maxtimevalue;
         allSet = true;
     }
 
@@ -46,6 +48,8 @@ public class TheTask : MonoBehaviour
         {
             timer();
         }
+        
+        Pbar.value = (maxtimevalue-timevalue);
     }
     
     public void timer()
