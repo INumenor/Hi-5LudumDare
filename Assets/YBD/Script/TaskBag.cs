@@ -44,7 +44,7 @@ public class TaskBag : MonoBehaviour
     {
         if (createtask.Count <= 8)
         {
-            int iRandomValue = Random.Range(0, 100);
+            int iRandomValue = Random.Range(1, 101);
 
             if (iRandomValue >= Slot1[0] && iRandomValue <= Slot1[1])
             {
