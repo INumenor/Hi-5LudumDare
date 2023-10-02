@@ -23,7 +23,8 @@ public class timer : MonoBehaviour
         if (remaningtime <= 0)
         {
             Debug.Log("Kazandık");
-            _audioWin.Play();
+            if(!_audioWin.isPlaying)
+                _audioWin.Play();
         }
     }
 }
