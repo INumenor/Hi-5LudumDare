@@ -959,8 +959,8 @@ MonoBehaviour:
   _audioSource: {fileID: 194711705}
   _audioPickUp: {fileID: 194711707}
   _audioDrop: {fileID: 194711706}
-  _audioHit: {fileID: 0}
-  _audioLose: {fileID: 0}
+  _audioHit: {fileID: 194711709}
+  _audioLose: {fileID: 194711708}
   Vertical: 0
   Horizontal: 0
   myRigidBody2D: {fileID: 194711701}
