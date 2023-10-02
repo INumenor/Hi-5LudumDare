@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5633045680443762432}
   - component: {fileID: 3002369216894347456}
   - component: {fileID: 8628643052224348551}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 4_Bat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

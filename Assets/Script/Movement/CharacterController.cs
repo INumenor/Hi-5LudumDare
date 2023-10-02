@@ -8,6 +8,7 @@ public class CharacterController : MonoBehaviour
 
     [SerializeField] float moveSpeed;
     [SerializeField] private GameObject InteractionSpot;
+    [SerializeField] private GameObject interactionIndicator;
     public float Vertical, Horizontal;
     private int Health = 3;
 
@@ -131,6 +132,7 @@ public class CharacterController : MonoBehaviour
 
             if (target != null )
             {
+                
                 pickuping = true;
                 //Debug.Log("Target var");
                 //Debug.Log("IsHolding " + IsHolding.ToString());
@@ -170,6 +172,10 @@ public class CharacterController : MonoBehaviour
         }
 
         InteractionSpot.transform.localPosition = new Vector3(LastDirection.x, LastDirection.y, 0);
+        if (target != null)
+        {
+            interactionIndicator.transform.position = target.transform.position;
+        }
     }
 
     void FixedUpdate()

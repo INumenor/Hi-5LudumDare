@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9162865948225450539}
   - component: {fileID: 5038346778190386954}
   - component: {fileID: 3652484988638992228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 7_Green Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
