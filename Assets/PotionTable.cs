@@ -11,6 +11,7 @@ public class PotionTable : MonoBehaviour
     public bool poting = false;
     private GameObject itemtarget;
     [SerializeField] private Slider slider;
+    [SerializeField] private AudioSource _audioSource;
     public void FixedUpdate()
     {
         if (transform.childCount > 0)
@@ -27,7 +28,15 @@ public class PotionTable : MonoBehaviour
                     if (itemtarget.GetComponent<ItemScript>().isPotionable)
                     {
                         itemtarget.GetComponent<ItemScript>()._potionValue += 1* Time.deltaTime;
+                        if (!_audioSource.isPlaying)
+                        {
+                            _audioSource.Play();
+                        }
                         slider.value = itemtarget.GetComponent<ItemScript>()._potionValue;
+                    }
+                    else
+                    {
+                        _audioSource.Stop();
                     }
                 }
             }

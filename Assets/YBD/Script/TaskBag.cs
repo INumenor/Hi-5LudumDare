@@ -19,6 +19,7 @@ public class TaskBag : MonoBehaviour
     public GameObject task;
     public GameObject clone;
     public GameObject taskcanvas;
+    [SerializeField] private AudioSource _audioOrder;
 
     private float maxtimevalue = 30f;
     private float timevalue = 15f;
@@ -121,6 +122,7 @@ public class TaskBag : MonoBehaviour
             createtask.Add(clonejr);
             Dict.Add(iPop[0],clonejr);
             clonejr.GetComponent<TheTask>().ID = iPop[0];
+            _audioOrder.Play();
             iPop.RemoveAt(0);
             //number++;
         }

@@ -11,6 +11,7 @@ public class ElixirTable : MonoBehaviour
     [SerializeField] private GameObject BlueBottle;
     [SerializeField] private GameObject GreenBottle;
     [SerializeField] private float maxMerging = 5;
+    [SerializeField] private AudioSource _audioSource;
     private float merging;
     private GameObject result = null;
     public Slider slider;
@@ -52,6 +53,10 @@ public class ElixirTable : MonoBehaviour
                 Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 13)
             {
                 _merging += 1* Time.deltaTime;
+                if (!_audioSource.isPlaying)
+                {
+                    _audioSource.Play();
+                }
                 result = GreenBottle;
                 slider.value = _merging;
             }
@@ -61,12 +66,17 @@ public class ElixirTable : MonoBehaviour
                      Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 13)
             {
                 _merging += 1* Time.deltaTime;
+                if (!_audioSource.isPlaying)
+                {
+                    _audioSource.Play();
+                }
                 result = BlueBottle;
                 slider.value = _merging;
             }
         }
         else
         {
+            _audioSource.Stop();
             slider.gameObject.active = false;
             merging = 0;
         }

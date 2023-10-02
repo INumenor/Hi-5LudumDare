@@ -17,6 +17,7 @@ public class MergingTable : MonoBehaviour
     [SerializeField] private GameObject PoisonedKnife;
     [SerializeField] private GameObject ElectricedKnife;
     [SerializeField] public Slider slider;
+    [SerializeField] private AudioSource _audioSource;
 
     [SerializeField] private float maxMerging = 5;
     private float merging;
@@ -58,6 +59,10 @@ public class MergingTable : MonoBehaviour
             slider.gameObject.active = true;
             if (Slot1.transform.childCount > 0 && Slot2.transform.childCount > 0)
             {
+                if (!_audioSource.isPlaying)
+                {
+                    _audioSource.Play();
+                }
                 if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 4 &&
                     Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||
                     Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 4 &&
@@ -115,6 +120,7 @@ public class MergingTable : MonoBehaviour
         {
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", false);
             slider.gameObject.active = false;
+            _audioSource.Stop();
         }
         if (slider.value == slider.maxValue)
         {

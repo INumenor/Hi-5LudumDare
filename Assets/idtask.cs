@@ -10,7 +10,8 @@ public class idtask : MonoBehaviour
     public int ID = -1;
     public float Difficulty = 0f;
     private int times = 0;
-    [SerializeField] private bool isActive = true;
+    [SerializeField] private bool isActive = false;
+    [SerializeField] private AudioSource _audioItemDelivery;
 
     public bool _isActive
     {
@@ -21,7 +22,6 @@ public class idtask : MonoBehaviour
         set
         {
             isActive = value;
-            
         }
     }
 
@@ -33,6 +33,14 @@ public class idtask : MonoBehaviour
             var tempColor = image.color;
             tempColor.a = 1f;
             image.color = tempColor;
+            if (!_audioItemDelivery.isPlaying && times > 0)
+            {
+                _audioItemDelivery.Play();
+            }
+            else
+            {
+                times = 1;
+            }
         }
         else
         {

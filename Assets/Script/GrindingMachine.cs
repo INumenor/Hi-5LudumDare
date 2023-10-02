@@ -12,6 +12,8 @@ public class GrindingMachine : MonoBehaviour
     public bool isGrind = false;
     public GameObject itemtarget;
     [SerializeField]private Slider slider;
+    [SerializeField]private AudioSource _audioGrind;
+
     public void Start()
     {
         
@@ -33,6 +35,8 @@ public class GrindingMachine : MonoBehaviour
                 {
                     GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     itemtarget.GetComponent<ItemScript>()._grindValue += 1* Time.deltaTime;
+                    if(!_audioGrind.isPlaying)
+                        _audioGrind.Play();
                     slider.value = itemtarget.GetComponent<ItemScript>()._grindValue;
                 }
 
@@ -42,6 +46,7 @@ public class GrindingMachine : MonoBehaviour
         {
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", false);
             itemtarget = null;
+            _audioGrind.Stop();
             slider.gameObject.active = false;
         }
         if(slider.value == slider.maxValue)

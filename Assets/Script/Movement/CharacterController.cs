@@ -9,6 +9,13 @@ public class CharacterController : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] private GameObject InteractionSpot;
     [SerializeField] private GameObject interactionIndicator;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioPickUp;
+    [SerializeField] private AudioSource _audioDrop;
+    [SerializeField] private AudioSource _audioHit;
+    [SerializeField] private AudioSource _audioLose;
+
+
     public float Vertical, Horizontal;
     private int Health = 3;
 
@@ -24,6 +31,11 @@ public class CharacterController : MonoBehaviour
             if (Health <= 0)
             {
                 Debug.Log("GAME OVER");
+                _audioLose.Play();
+            }
+            else
+            {
+                _audioHit.Play();
             }
         }
     }
@@ -55,16 +67,23 @@ public class CharacterController : MonoBehaviour
             
             //chanimator.SetFloat("Horizontal", movement.x);
             //chanimator.SetFloat("Vertical", movement.y);
+            _audioSource.Stop();
             chanimator.SetFloat("Speed", movement.sqrMagnitude);
         }
         else
         {
+            if (_audioSource.isPlaying == false)
+            {
+                _audioSource.Play();
+            }
             chanimator.SetFloat("Horizontal", movement.x);
             chanimator.SetFloat("Vertical", movement.y);
             chanimator.SetFloat("Speed", movement.sqrMagnitude);
             
             if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
             {
+                //Yürüyor
+                
                 if (movement.x > 0)
                 {
                     LastDirection = Vector2.right;
@@ -150,7 +169,8 @@ public class CharacterController : MonoBehaviour
                     Item.GetComponent<Collider2D>().enabled = false;
                     target.GetComponent<TileSlot>()._isFull = false;
                     Debug.Log(target.GetComponent<Collider2D>().enabled);
-                    //
+                    //pick up
+                    _audioPickUp.Play();
                 }
                 else if (IsHolding == true && target.GetComponent<TileSlot>()._isFull == false)
                 {
@@ -162,7 +182,8 @@ public class CharacterController : MonoBehaviour
                     Item.GetComponent<Collider2D>().enabled = true;
                     target.GetComponent<TileSlot>()._isFull = true;
                     
-                    //
+                    //drop
+                    _audioDrop.Play();
                 }
 
             }
