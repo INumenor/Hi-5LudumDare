@@ -126,7 +126,7 @@ public class CharacterController : MonoBehaviour
         }
         
         
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             //Debug.Log("BBBBBB");
 
