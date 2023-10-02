@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ElixirTable : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ElixirTable : MonoBehaviour
     [SerializeField] private float maxMerging = 5;
     private float merging;
     private GameObject result = null;
+    public Slider slider;
     
     public float _merging
     {
@@ -36,8 +38,6 @@ public class ElixirTable : MonoBehaviour
                 merging = 0;
                 //Slot1.GetComponent<TileSlot>()._isFull = false;
                 Slot2.GetComponent<TileSlot>()._isFull = false;
-
-
             }
         }
     }
@@ -45,6 +45,7 @@ public class ElixirTable : MonoBehaviour
     {
         if (Slot1.transform.childCount > 0 && Slot2.transform.childCount > 0)
         {
+            slider.gameObject.active = true;
             if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 2 &&
                 Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 13 ||
                 Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 2 &&
@@ -52,6 +53,7 @@ public class ElixirTable : MonoBehaviour
             {
                 _merging += 1* Time.deltaTime;
                 result = GreenBottle;
+                slider.value = _merging;
             }
             else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 3 &&
                      Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 13 ||
@@ -60,11 +62,17 @@ public class ElixirTable : MonoBehaviour
             {
                 _merging += 1* Time.deltaTime;
                 result = BlueBottle;
+                slider.value = _merging;
             }
         }
         else
         {
+            slider.gameObject.active = false;
             merging = 0;
+        }
+        if (slider.value == slider.maxValue)
+        {
+            slider.value = slider.minValue;
         }
     }
 }

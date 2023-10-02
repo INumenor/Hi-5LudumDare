@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class MergingTable : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class MergingTable : MonoBehaviour
     [SerializeField] private GameObject ElectricedSpear;
     [SerializeField] private GameObject PoisonedKnife;
     [SerializeField] private GameObject ElectricedKnife;
+    [SerializeField] public Slider slider;
 
     [SerializeField] private float maxMerging = 5;
     private float merging;
@@ -54,6 +55,7 @@ public class MergingTable : MonoBehaviour
     {
         if (isGrind && isMergable)
         {
+            slider.gameObject.active = true;
             if (Slot1.transform.childCount > 0 && Slot2.transform.childCount > 0)
             {
                 if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 4 &&
@@ -63,6 +65,7 @@ public class MergingTable : MonoBehaviour
                 {
                     _merging += 1* Time.deltaTime;
                     result = Spear;
+                    slider.value = _merging;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 &&
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 ||
@@ -71,6 +74,7 @@ public class MergingTable : MonoBehaviour
                 {
                     _merging += 1* Time.deltaTime;
                     result = PoisonedSpear;
+                    slider.value = _merging;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 ||
@@ -79,6 +83,7 @@ public class MergingTable : MonoBehaviour
                 {
                     _merging += 1* Time.deltaTime;
                     result = ElectricedSpear;
+                    slider.value = _merging;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 &&
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||
@@ -87,6 +92,7 @@ public class MergingTable : MonoBehaviour
                 {
                     _merging += 1* Time.deltaTime;
                     result = PoisonedKnife;
+                    slider.value = _merging;
                 }
                 else if (Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 14 ||
@@ -95,9 +101,18 @@ public class MergingTable : MonoBehaviour
                 {
                     _merging += 1* Time.deltaTime;
                     result = ElectricedKnife;
+                    slider.value = _merging;
                 }
             }
                 
+        }
+        else
+        {
+            slider.gameObject.active = false;
+        }
+        if (slider.value == slider.maxValue)
+        {
+            slider.value = slider.minValue;
         }
     }
 }

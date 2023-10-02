@@ -22,6 +22,7 @@ public class GrindingMachine : MonoBehaviour
     {
         if (isGrind != false)
         {
+            slider.gameObject.active = true;
             if (itemtarget == null && transform.childCount > 0)
             {
                 itemtarget = transform.GetChild(0).gameObject;
@@ -39,6 +40,7 @@ public class GrindingMachine : MonoBehaviour
         else
         {
             itemtarget = null;
+            slider.gameObject.active = false;
         }
         if(slider.value == slider.maxValue)
         {
