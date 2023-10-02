@@ -23,8 +23,6 @@ public class RandomItemDrop : MonoBehaviour
     }
      void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        RandomItemCreator();
         
         timer();
         
