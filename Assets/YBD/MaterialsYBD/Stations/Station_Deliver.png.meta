@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9cd1df88897a6c499e8b275eb12330b
+guid: 7c10e116e70defd44979dea15b9d8282
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main character-Carry_up_0
+      name: Station_Deliver_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b590922ba989c94db21cac4ceee0764
-      internalID: 1371248010
+      spriteID: 0f32f5b29547be249afb391bce902985
+      internalID: 340794272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a7a775ec5f201d4691b801052e8c3b1
-      internalID: 312290348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_2
+      name: Station_Deliver_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,41 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b98703822e046f47b22e61145573e2f
-      internalID: -1856015768
+      spriteID: f9ac8c3fc7048484dbe0443846c562cb
+      internalID: 1983364834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b36f35218759c544ae714b37cac64b8
-      internalID: -1157158475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main character-Carry_up_4
+      name: Station_Deliver_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9842bb97c9960544e806c445e71ba5d9
-      internalID: -1675198239
+      spriteID: a6315f7d8f8d25b4bb6d52d6a3f11d72
+      internalID: 1072027375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main character-Carry_up_5
+      name: Station_Deliver_3
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 0
-        width: 16
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,8 +187,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dbbb32c9619834c89f07d5a79431ad
-      internalID: -1038903867
+      spriteID: 75c9a8956481fa84e830766f00efdcf6
+      internalID: -1464024165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0355a55e4b554e141b264b5e27f4b19f
+      internalID: -1257911949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525d595f6dff0e84b8000b463c9bdb8d
+      internalID: -1087912317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627095258667e604cb3dabc3e503ae22
+      internalID: 128631188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1773b649c1ff5143ab282234728ae98
+      internalID: 208539501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161a69f18d1c5474f829b505ad1f71f9
+      internalID: 37614076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716f6545edaf4454b8e795fed990f795
+      internalID: -724489169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e95b8421b53c624689f1217c636eba8
+      internalID: 294280114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Station_Deliver_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae355b0bb720a1046a91b39fb4e58971
+      internalID: 1070233420
       vertices: []
       indices: 
       edges: []
@@ -272,12 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main character-Carry_up_0: 1371248010
-      Main character-Carry_up_1: 312290348
-      Main character-Carry_up_2: -1856015768
-      Main character-Carry_up_3: -1157158475
-      Main character-Carry_up_4: -1675198239
-      Main character-Carry_up_5: -1038903867
+      Station_Deliver_0: 340794272
+      Station_Deliver_1: 1983364834
+      Station_Deliver_10: 294280114
+      Station_Deliver_11: 1070233420
+      Station_Deliver_2: 1072027375
+      Station_Deliver_3: -1464024165
+      Station_Deliver_4: -1257911949
+      Station_Deliver_5: -1087912317
+      Station_Deliver_6: 128631188
+      Station_Deliver_7: 208539501
+      Station_Deliver_8: 37614076
+      Station_Deliver_9: -724489169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
