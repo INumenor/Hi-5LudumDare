@@ -450,6 +450,11 @@ MonoBehaviour:
   moveSpeed: 5
   InteractionSpot: {fileID: 830146690}
   interactionIndicator: {fileID: 360620541}
+  _audioSource: {fileID: 0}
+  _audioPickUp: {fileID: 0}
+  _audioDrop: {fileID: 0}
+  _audioHit: {fileID: 0}
+  _audioLose: {fileID: 0}
   Vertical: 0
   Horizontal: 0
   myRigidBody2D: {fileID: 128017600}
@@ -928,6 +933,7 @@ MonoBehaviour:
   - {fileID: 5319180295112187650, guid: e662cf26c845e35488514f4259eaa05b, type: 3}
   - {fileID: 2705767111224210563, guid: 8c67e4cd4d4827b46bc69ec28ce4e4d6, type: 3}
   - {fileID: 5549744898133676839, guid: f713257f03a982142a4faadc3bfbb5c4, type: 3}
+  _audioItemFall: {fileID: 0}
 --- !u!4 &235228676
 Transform:
   m_ObjectHideFlags: 0
@@ -5880,6 +5886,7 @@ MonoBehaviour:
   task: {fileID: 3912457241370924430, guid: 9110d80f344f4ad4799b123f986557a9, type: 3}
   clone: {fileID: 0}
   taskcanvas: {fileID: 183632221}
+  _audioOrder: {fileID: 0}
   taskvector: {x: 0, y: 0, z: 0}
   iPop: 010000000200000003000000040000000500000006000000070000000800000009000000
   Slot1: 0000000032000000
@@ -5899,6 +5906,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timertext: {fileID: 1453111823}
   remaningtime: 180
+  _audioSource: {fileID: 0}
+  _audioWin: {fileID: 0}
 --- !u!114 &888146799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6898,6 +6907,7 @@ MonoBehaviour:
   - {fileID: 6749886091073689943, guid: cfdea95cf87bfa740aa50355cfbd4fde, type: 3}
   - {fileID: 5319180295112187650, guid: e662cf26c845e35488514f4259eaa05b, type: 3}
   - {fileID: 2705767111224210563, guid: 8c67e4cd4d4827b46bc69ec28ce4e4d6, type: 3}
+  _audioItemFall: {fileID: 0}
 --- !u!4 &1153592815
 Transform:
   m_ObjectHideFlags: 0
@@ -8973,7 +8983,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &2076825557
 GameObject:
