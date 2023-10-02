@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7218776426167539500}
   - component: {fileID: 9141462171464056897}
   - component: {fileID: -5321233554787851029}
+  - component: {fileID: 279833048039571553}
   m_Layer: 6
   m_Name: PotionTable
   m_TagString: Station
@@ -75,9 +76,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
-  m_Color: {r: 1, g: 0.60784316, b: 0.79414004, a: 0.58431375}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -2057648639, guid: cceb77430972383478dfa148a261d833, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -157,3 +158,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24d433a995c409458986faf667ec236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poting: 0
+  slider: {fileID: 0}
+--- !u!95 &279833048039571553
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7596228966992866066}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc4749d53ac7642428a0ac7bcba9377f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

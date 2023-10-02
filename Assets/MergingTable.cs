@@ -63,6 +63,7 @@ public class MergingTable : MonoBehaviour
                     Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 4 &&
                     Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 14)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     _merging += 1* Time.deltaTime;
                     result = Spear;
                     slider.value = _merging;
@@ -72,6 +73,7 @@ public class MergingTable : MonoBehaviour
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 8 &&
                          Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 7)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     _merging += 1* Time.deltaTime;
                     result = PoisonedSpear;
                     slider.value = _merging;
@@ -81,6 +83,7 @@ public class MergingTable : MonoBehaviour
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
                          Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 8)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     _merging += 1* Time.deltaTime;
                     result = ElectricedSpear;
                     slider.value = _merging;
@@ -90,6 +93,7 @@ public class MergingTable : MonoBehaviour
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 7 &&
                          Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 14)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     _merging += 1* Time.deltaTime;
                     result = PoisonedKnife;
                     slider.value = _merging;
@@ -99,6 +103,7 @@ public class MergingTable : MonoBehaviour
                          Slot2.transform.GetChild(0).GetComponent<ItemScript>().ID == 6 &&
                          Slot1.transform.GetChild(0).GetComponent<ItemScript>().ID == 14)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     _merging += 1* Time.deltaTime;
                     result = ElectricedKnife;
                     slider.value = _merging;
@@ -108,6 +113,7 @@ public class MergingTable : MonoBehaviour
         }
         else
         {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", false);
             slider.gameObject.active = false;
         }
         if (slider.value == slider.maxValue)

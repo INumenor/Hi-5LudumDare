@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,33 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -115,17 +141,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5472326320f9ce4c920a0374815b1c5
-      internalID: 2054620777
+      spriteID: 3c13caf3773b64c4787d4abb2e6e94d1
+      internalID: -2113632503
       vertices: []
       indices: 
       edges: []
@@ -134,19 +160,19 @@ TextureImporter:
       name: Station_Elixir_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6594a2bd778f3354da750e109e4e0eff
-      internalID: 1754081329
+      spriteID: 24d058f2cee5dc648b8afb8d2137fb51
+      internalID: 1609437660
       vertices: []
       indices: 
       edges: []
@@ -155,19 +181,19 @@ TextureImporter:
       name: Station_Elixir_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89238aeed83171428e0eba9e0fdf385
-      internalID: -2032891397
+      spriteID: 64a41324d23fc9447984b7c28e3a69bd
+      internalID: 453408504
       vertices: []
       indices: 
       edges: []
@@ -176,19 +202,19 @@ TextureImporter:
       name: Station_Elixir_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc58ffbe191837449df9e301a1d4ec2
-      internalID: -237853691
+      spriteID: 9e1629722bd9e434592ad706483debeb
+      internalID: -69506222
       vertices: []
       indices: 
       edges: []
@@ -197,19 +223,19 @@ TextureImporter:
       name: Station_Elixir_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 256
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 181750dc14c7c1b42b4028ec701041f6
-      internalID: -799133295
+      spriteID: 61e5b3e06f94ddb4e9251a73b820eb4f
+      internalID: -1143991851
       vertices: []
       indices: 
       edges: []
@@ -218,19 +244,19 @@ TextureImporter:
       name: Station_Elixir_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 320
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39199a9ba464c3f4a8278eed475441a4
-      internalID: -563169917
+      spriteID: 8c5406b92cb9923428d1e54a5a87a289
+      internalID: 1293511493
       vertices: []
       indices: 
       edges: []
@@ -246,12 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Station_Elixir_0: 2054620777
-      Station_Elixir_1: 1754081329
-      Station_Elixir_2: -2032891397
-      Station_Elixir_3: -237853691
-      Station_Elixir_4: -799133295
-      Station_Elixir_5: -563169917
+      Station_Elixir_0: -2113632503
+      Station_Elixir_1: 1609437660
+      Station_Elixir_2: 453408504
+      Station_Elixir_3: -69506222
+      Station_Elixir_4: -1143991851
+      Station_Elixir_5: 1293511493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

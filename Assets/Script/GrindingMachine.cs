@@ -31,6 +31,7 @@ public class GrindingMachine : MonoBehaviour
             {
                 if (itemtarget.GetComponent<ItemScript>().isGrindable)
                 {
+                    GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", true);
                     itemtarget.GetComponent<ItemScript>()._grindValue += 1* Time.deltaTime;
                     slider.value = itemtarget.GetComponent<ItemScript>()._grindValue;
                 }
@@ -39,6 +40,7 @@ public class GrindingMachine : MonoBehaviour
         }
         else
         {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isWork", false);
             itemtarget = null;
             slider.gameObject.active = false;
         }
