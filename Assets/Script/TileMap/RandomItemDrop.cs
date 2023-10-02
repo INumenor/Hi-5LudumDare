@@ -9,6 +9,9 @@ public class RandomItemDrop : MonoBehaviour
     private GameObject[] AllTile;
     [SerializeField] List<GameObject> EmptyTile;
     [SerializeField] GameObject[] RandomItem;
+    
+    private float maxtimevalue = 10f;
+    private float timevalue = 5f;
 
     private void Start()
     {
@@ -22,7 +25,25 @@ public class RandomItemDrop : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         RandomItemCreator();
+        
+        timer();
+        
     }
+     
+     public void timer()
+     {
+        
+         if (timevalue <= 0)
+         {
+             timevalue = maxtimevalue;
+             RandomItemCreator();
+         }
+         else
+         {
+             timevalue -= Time.deltaTime;
+         }
+     }
+     
     public void RandomItemCreator()
     {
         EmptyTile.Clear();
