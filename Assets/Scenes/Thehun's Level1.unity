@@ -4401,7 +4401,7 @@ MonoBehaviour:
   - {fileID: 5319180295112187650, guid: e662cf26c845e35488514f4259eaa05b, type: 3}
   - {fileID: 2705767111224210563, guid: 8c67e4cd4d4827b46bc69ec28ce4e4d6, type: 3}
   - {fileID: 5549744898133676839, guid: f713257f03a982142a4faadc3bfbb5c4, type: 3}
-  - {fileID: 3417132882209658479, guid: 94c93d68ce774084896a236f4acfddab, type: 3}
+  - {fileID: 7348694707694221767, guid: 75a0d41eda0cefd479419a919156fcac, type: 3}
 --- !u!1 &1444952119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,7 +4437,6 @@ MonoBehaviour:
   taskitem: []
   tasklist:
   - {fileID: 11400000, guid: 31dbb3b7e768c6042934b392fd24de2b, type: 2}
-  - {fileID: 11400000, guid: 94917b6d726c21b48b40c8e39dc83266, type: 2}
   createtask: []
   droppedTaskPrefab: {fileID: 6682717893060842110, guid: ec306ec0f526df242a58fce63641a3fc, type: 3}
   task: {fileID: 3912457241370924430, guid: 9110d80f344f4ad4799b123f986557a9, type: 3}
@@ -4445,9 +4444,9 @@ MonoBehaviour:
   taskcanvas: {fileID: 1053755988}
   taskvector: {x: 0, y: 0, z: 0}
   iPop: 010000000200000003000000040000000500000006000000070000000800000009000000
-  Slot1: 0000000032000000
-  Slot2: 4600000064000000
-  Slot3: 3200000046000000
+  Slot1: 00000000e8030000
+  Slot2: 6500000066000000
+  Slot3: 6700000068000000
 --- !u!114 &1444952121
 MonoBehaviour:
   m_ObjectHideFlags: 0

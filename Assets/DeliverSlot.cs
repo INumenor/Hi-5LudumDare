@@ -23,54 +23,26 @@ public class DeliverSlot : MonoBehaviour
             //Yok et transform.GetChild(1)
             foreach (var task in taskBag.Dict)
             {
-                if (task.Key == ID)
+                if (task.Value.GetComponent<TheTask>().ID == ID)
                 {
                     Debug.Log(task.Value);
                     GameObject parentTransform = task.Value;
                     GameObject firstChild = parentTransform.transform.GetChild(1).gameObject;
                     GameObject secondChild = parentTransform.transform.GetChild(2).gameObject;
                     GameObject thirdchild = parentTransform.transform.GetChild(3).gameObject;
+                    
+                    //içimdeki itemin idsi ile taskteki herhangi bir itemin idsi uyuşuyorsa içimdeki itemi yok et ve taskteki itemi tamamlanmış hale getir. 
 
-                    if (!secondChild.active)
-                    {
-                        secondChild.name = "Correct";
-                    }
-                    if (!thirdchild.active)
-                    {
-                        thirdchild.name = "Correct";
-                    }
-
-                    if (firstChild.active && firstChild.GetComponent<Image>().sprite.name == transform.GetChild(1).name
-                        && firstChild.GetComponent<Image>().color != Color.black)
-                    {
-                        firstChild.GetComponent<Image>().color = Color.black;
-                        firstChild.name = "Correct";
-                        Destroy(transform.GetChild(1).gameObject);
-                        transform.GetComponent<TileSlot>()._isFull = false;
-                    }
-                    else if (secondChild.active && secondChild.GetComponent<Image>().sprite.name == transform.GetChild(1).name
-                        && secondChild.GetComponent<Image>().color != Color.black)
-                    {
-                        secondChild.GetComponent<Image>().color = Color.black;
-                        secondChild.name = "Correct";
-                        Destroy(transform.GetChild(1).gameObject);
-                        transform.GetComponent<TileSlot>()._isFull = false;
-                    }
-                    else if (thirdchild.active && thirdchild.GetComponent<Image>().sprite.name == transform.GetChild(1).name
-                        && thirdchild.GetComponent<Image>().color != Color.black)
-                    {
-                        thirdchild.GetComponent<Image>().color = Color.black;
-                        thirdchild.name = "Correct";
-                        Destroy(transform.GetChild(1).gameObject);
-                        transform.GetComponent<TileSlot>()._isFull = false;
-                    }
-
-                    if(thirdchild.name == "Correct" && secondChild.name == "Correct" && firstChild.name == "Correct")
-                    {
-                        taskBag.iPop.Add(task.Key);
-                        taskBag.createtask.RemoveAt(task.Key);
-                        
-                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
 
                     
                 }
