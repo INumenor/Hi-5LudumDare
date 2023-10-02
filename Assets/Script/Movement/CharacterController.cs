@@ -7,7 +7,7 @@ public class CharacterController : MonoBehaviour
 {
 
     [SerializeField] float moveSpeed;
-
+    [SerializeField] private GameObject InteractionSpot;
     public float Vertical, Horizontal;
 
     Vector2 movement;
@@ -20,8 +20,12 @@ public class CharacterController : MonoBehaviour
     private Collider2D _other;
     private GameObject target;
     private bool pickuping = false;
+    private Vector2 LastDirection;
 
-    // Update is called once per frame
+    public void ChangeInteractionDirection(int arg)
+    {
+        InteractionSpot.transform.rotation = Quaternion.Euler(Vector3.forward * arg);
+    }
     void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
@@ -40,7 +44,33 @@ public class CharacterController : MonoBehaviour
             chanimator.SetFloat("Horizontal", movement.x);
             chanimator.SetFloat("Vertical", movement.y);
             chanimator.SetFloat("Speed", movement.sqrMagnitude);
+            
+            if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+            {
+                if (movement.x > 0)
+                {
+                    LastDirection = Vector2.right;
+                }
+                else
+                {
+                    LastDirection = Vector2.left;
+                }
+            }
+            else
+            {
+                if (movement.y > 0)
+                {
+                    LastDirection = Vector2.up;
+                }
+                else
+                {
+                    LastDirection = Vector2.down;
+                }
+            }
         }
+
+        
+        
         if (IsHolding == false)
         {
             chanimator.SetBool("isHolding", false);
@@ -121,6 +151,8 @@ public class CharacterController : MonoBehaviour
 
             pickuping = false;
         }
+
+        InteractionSpot.transform.localPosition = new Vector3(LastDirection.x, LastDirection.y, 0);
     }
 
     void FixedUpdate()
@@ -134,13 +166,6 @@ public class CharacterController : MonoBehaviour
         {
             target = other.gameObject;
         }
-    }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        //_other = other;
-
-        checking(other);
-
     }
 
 }

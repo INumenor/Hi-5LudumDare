@@ -80,7 +80,7 @@ public class TaskBag : MonoBehaviour
             clonejr.name = iPop[0].ToString();
             clonejr.transform.localPosition = new Vector3(taskvector.x, taskvector.y - 25, taskvector.z);
             clonejr.transform.localScale = new Vector3(1f, 1f, 1f);
-            clonejr.transform.localRotation = new Quaternion(0, 180, 0, 0);
+            clonejr.transform.localRotation = new Quaternion(0, 0, 0, 0);
 
             for (int y = 0; y <= possibleItems.Count; y++)
             {
@@ -105,6 +105,7 @@ public class TaskBag : MonoBehaviour
             taskvector.y = taskvector.y - 25;
             createtask.Add(clonejr);
             Dict.Add(iPop[0],clonejr);
+            clonejr.GetComponent<TheTask>().ID = 1;
             iPop.RemoveAt(0);
             //number++;
         }

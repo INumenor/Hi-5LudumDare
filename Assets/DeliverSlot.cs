@@ -72,9 +72,7 @@ public class DeliverSlot : MonoBehaviour
                         
                     }
 
-
-                    //Debug.Log(transform.GetChild(1).name);
-                    //Debug.Log(firstChild.GetComponent<Image>().sprite.name);
+                    
                 }
             }
         //    //Taske işle
