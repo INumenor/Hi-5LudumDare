@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -19,11 +20,14 @@ public class TaskBag : MonoBehaviour
     public GameObject clone;
     public GameObject taskcanvas;
 
+    private float maxtimevalue = 30f;
+    private float timevalue = 15f;
+
     public Vector3 taskvector;
     int SlotValue;
 
     public List<int> iPop = new List<int>{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
+    
     public Dictionary<int, GameObject> Dict = new Dictionary<int, GameObject>()
     {
     };
@@ -129,6 +133,25 @@ public class TaskBag : MonoBehaviour
     public void Button()
     {
         getDropItem();
+    }
+
+    private void Update()
+    {
+        timer();
+    }
+
+    public void timer()
+    {
+        
+        if (timevalue <= 0)
+        {
+            timevalue = maxtimevalue;
+            getDropItem();
+        }
+        else
+        {
+            timevalue -= Time.deltaTime;
+        }
     }
 
 }
