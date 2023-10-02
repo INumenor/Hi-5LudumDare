@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemScript : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class ItemScript : MonoBehaviour
             GameObject shineyObject = Instantiate(grindedVersion, new Vector2(0, 0), Quaternion.identity);
             shineyObject.transform.parent = this.transform.parent;
             shineyObject.transform.localPosition = Vector2.zero;
+            //shineyObject.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - 1);
             //Destroy(this);
             Destroy(gameObject);
          }
