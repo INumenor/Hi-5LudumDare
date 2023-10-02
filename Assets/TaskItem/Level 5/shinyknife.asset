@@ -17,4 +17,4 @@ MonoBehaviour:
   mindropChance: 0
   ID: 14
   Difficulty: 30
-  maxdropChance: 0
+  maxdropChance: 10
