@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskSprite: {fileID: -584506788, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   Taskname: posionspear
-  mindropChance: 0
+  mindropChance: 61
   ID: 10
   Difficulty: 65
-  maxdropChance: 0
+  maxdropChance: 70

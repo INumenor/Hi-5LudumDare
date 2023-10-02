@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskSprite: {fileID: -380168577, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   Taskname: BlueBottle
-  mindropChance: 0
+  mindropChance: 51
   ID: 7
   Difficulty: 30
-  maxdropChance: 0
+  maxdropChance: 60

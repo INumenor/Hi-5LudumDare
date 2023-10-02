@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskSprite: {fileID: -535146470, guid: 101c11a2ce4f7524c9f1968ab3810c5e, type: 3}
   Taskname: electricknife
-  mindropChance: 0
+  mindropChance: 71
   ID: 12
   Difficulty: 40
-  maxdropChance: 0
+  maxdropChance: 80
