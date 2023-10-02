@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 194711698}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,6 +911,7 @@ MonoBehaviour:
   InteractionSpot: {fileID: 436767584}
   Vertical: 0
   Horizontal: 0
+  Health: 3
   myRigidBody2D: {fileID: 194711701}
   HoldSpot: {fileID: 1848536063}
   IsHolding: 0
@@ -1629,7 +1630,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.437839
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4417,7 +4418,7 @@ GameObject:
   - component: {fileID: 1444952120}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: TaskBag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4444,8 +4445,8 @@ MonoBehaviour:
   taskcanvas: {fileID: 1053755988}
   taskvector: {x: 0, y: 0, z: 0}
   iPop: 010000000200000003000000040000000500000006000000070000000800000009000000
-  Slot1: 00000000e8030000
-  Slot2: 6500000066000000
+  Slot1: 0000000032000000
+  Slot2: 3300000064000000
   Slot3: 6700000068000000
 --- !u!114 &1444952121
 MonoBehaviour:
@@ -4651,7 +4652,8 @@ PrefabInstance:
       value: Station
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7745804025920737686, guid: 6d06b4a6058f2764891509140ed2bdaf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d06b4a6058f2764891509140ed2bdaf, type: 3}

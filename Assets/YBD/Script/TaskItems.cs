@@ -9,6 +9,7 @@ public class TaskItems : ScriptableObject
     public string Taskname;
     public int mindropChance;
     public int ID;
+    public float Difficulty;
     public int maxdropChance;
     public TaskItems(string Taskname,int mindropChance,int maxdropChance)
     {

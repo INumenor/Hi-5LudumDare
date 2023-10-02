@@ -8,6 +8,7 @@ using Image = UnityEngine.UI.Image;
 public class idtask : MonoBehaviour
 {
     public int ID = -1;
+    public float Difficulty = 0f;
     private int times = 0;
     [SerializeField] private bool isActive = true;
 
